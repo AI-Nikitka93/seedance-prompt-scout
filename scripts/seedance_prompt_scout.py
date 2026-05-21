@@ -340,23 +340,26 @@ def scan_github_search(source: dict[str, Any], config: dict[str, Any], token: st
                 for key in ["full_name", "description", "language", "topics", "pushed_at", "html_url"]
             )
         )
+        matched_filter = source_text_matches(source, text)
         snippets = extract_snippets(text, keywords, max_chars) or ([text] if text else [])
-        rows.append(
-            {
-                "kind": "source_scan",
-                "source_id": source["id"],
-                "source_type": source["type"],
-                "trust": source.get("trust", "discovery"),
-                "url": item.get("html_url"),
-                "status": 200,
-                "ok": True,
-                "title": item.get("full_name"),
-                "updated_at": item.get("pushed_at"),
-                "stars": item.get("stargazers_count"),
-                "snippets": snippets[:2],
-                "risk_flags": risk_flags(text, config.get("risk_terms", [])),
-            }
-        )
+        row = {
+            "kind": "source_scan",
+            "source_id": source["id"],
+            "source_type": source["type"],
+            "trust": source.get("trust", "discovery"),
+            "url": item.get("html_url"),
+            "status": 200,
+            "ok": matched_filter,
+            "filter_miss": not matched_filter,
+            "title": item.get("full_name"),
+            "updated_at": item.get("pushed_at"),
+            "stars": item.get("stargazers_count"),
+            "snippets": snippets[:2],
+            "risk_flags": risk_flags(text, config.get("risk_terms", [])),
+        }
+        if not matched_filter:
+            row["error"] = "Result did not match source include filter."
+        rows.append(row)
     return rows
 
 
@@ -911,6 +914,9 @@ def build_candidates(scans: list[dict[str, Any]], config: dict[str, Any], run_da
         if not scan.get("ok") or scan.get("risk_flags"):
             continue
         for snippet in scan.get("snippets") or []:
+            score = score_snippet(snippet, keywords, str(scan.get("trust", "")))
+            if score <= 0:
+                continue
             candidates.append(
                 {
                     "id": stable_id(str(scan.get("url", "")), snippet),
@@ -921,7 +927,7 @@ def build_candidates(scans: list[dict[str, Any]], config: dict[str, Any], run_da
                     "trust": scan.get("trust"),
                     "source_url": scan.get("url"),
                     "title": scan.get("title"),
-                    "score": score_snippet(snippet, keywords, str(scan.get("trust", ""))),
+                    "score": score,
                     "snippet": snippet,
                     "review_note": "Promote manually only after license/provenance check and Seedance quality-gate rewrite.",
                 }
