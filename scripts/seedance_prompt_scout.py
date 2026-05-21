@@ -272,6 +272,87 @@ def github_api_json(path: str, token: str | None) -> dict[str, Any]:
     return {"ok": True, "status": response.get("status"), "url": url, "payload": payload}
 
 
+def github_content_api_path(repo: str, path: str) -> str:
+    clean_path = path.strip("/")
+    if not clean_path:
+        return f"/repos/{repo}/contents"
+    return f"/repos/{repo}/contents/{parse.quote(clean_path, safe='/')}"
+
+
+def collect_github_prompt_files(
+    repo: str,
+    token: str | None,
+    paths: list[str],
+    *,
+    max_depth: int,
+    max_files: int,
+    allowed_extensions: set[str],
+    max_file_bytes: int,
+) -> list[dict[str, Any]]:
+    collected: list[dict[str, Any]] = []
+
+    def walk(path: str, depth: int) -> None:
+        if len(collected) >= max_files or depth > max_depth:
+            return
+        result = github_api_json(github_content_api_path(repo, path), token)
+        if not result.get("ok"):
+            return
+        payload = result.get("payload")
+        items = payload if isinstance(payload, list) else [payload]
+        for item in items:
+            if len(collected) >= max_files or not isinstance(item, dict):
+                break
+            item_type = item.get("type")
+            item_path = str(item.get("path") or "")
+            if item_type == "dir" and depth < max_depth:
+                walk(item_path, depth + 1)
+                continue
+            if item_type != "file":
+                continue
+            suffix = Path(item_path).suffix.lower()
+            if suffix not in allowed_extensions:
+                continue
+            if int(item.get("size") or 0) > max_file_bytes:
+                continue
+            if "prompt" not in item_path.lower() and suffix not in {".md", ".mdx", ".txt"}:
+                continue
+            collected.append(item)
+
+    for start_path in paths:
+        walk(start_path, 0)
+        if len(collected) >= max_files:
+            break
+    return collected
+
+
+def extract_prompt_file_snippets(text: str, keywords: list[str], max_chars: int, limit: int) -> list[str]:
+    blocks: list[str] = []
+    for match in re.finditer(r"```(?:[a-zA-Z0-9_-]+)?\s*(.*?)```", text, flags=re.DOTALL):
+        block = normalize_ws(match.group(1))
+        if len(block) >= 80:
+            blocks.append(block)
+    for chunk in re.split(r"\n(?=#{1,4}\s)", text):
+        clean = normalize_ws(chunk)
+        lowered = clean.lower()
+        if len(clean) >= 120 and any(term in lowered for term in ["prompt", "seedance", "camera", "shot", "cinematic"]):
+            blocks.append(clean)
+    blocks.extend(extract_snippets(text, keywords, max_chars))
+
+    seen: set[str] = set()
+    snippets: list[str] = []
+    for block in blocks:
+        if len(block) > max_chars:
+            block = block[: max_chars - 1].rstrip() + "..."
+        key = stable_id(block.lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        snippets.append(block)
+        if len(snippets) >= limit:
+            break
+    return snippets
+
+
 def scan_github_repo(source: dict[str, Any], config: dict[str, Any], token: str | None) -> list[dict[str, Any]]:
     repo = source["repo"]
     repo_meta = github_api_json(f"/repos/{repo}", token)
@@ -292,7 +373,7 @@ def scan_github_repo(source: dict[str, Any], config: dict[str, Any], token: str 
     readme_title, readme_body = parse_document(readme.get("text", ""), readme.get("content_type", "text/plain"))
     combined = normalize_ws(repo_text + " " + readme_body)
     snippets = extract_snippets(combined, keywords, max_chars) if combined else []
-    return [
+    rows = [
         {
             "kind": "source_scan",
             "source_id": source["id"],
@@ -307,6 +388,70 @@ def scan_github_repo(source: dict[str, Any], config: dict[str, Any], token: str 
             "risk_flags": risk_flags(combined, config.get("risk_terms", [])),
         }
     ]
+    crawl_paths = [str(path) for path in source.get("crawl_paths", []) if str(path).strip()]
+    if not crawl_paths:
+        return rows
+
+    allowed_extensions = {str(ext).lower() for ext in source.get("file_extensions", [".md", ".mdx", ".txt", ".json"])}
+    files = collect_github_prompt_files(
+        repo,
+        token,
+        crawl_paths,
+        max_depth=int(source.get("max_depth", 3)),
+        max_files=int(source.get("max_files", 40)),
+        allowed_extensions=allowed_extensions,
+        max_file_bytes=int(source.get("max_file_bytes", 180000)),
+    )
+    snippets_per_file = int(source.get("snippets_per_file", 2))
+    for item in files:
+        download_url = item.get("download_url")
+        if not download_url:
+            continue
+        file_response = fetch_text(str(download_url), token=token, accept="text/plain,*/*")
+        if not file_response.get("ok"):
+            rows.append(
+                {
+                    "kind": "source_scan",
+                    "source_id": source["id"],
+                    "source_type": source["type"],
+                    "provider": "github_file",
+                    "trust": source.get("trust", "unknown"),
+                    "url": item.get("html_url"),
+                    "status": file_response.get("status"),
+                    "ok": False,
+                    "title": f"{repo}:{item.get('path')}",
+                    "file_path": item.get("path"),
+                    "error": file_response.get("error"),
+                    "snippets": [],
+                    "risk_flags": [],
+                }
+            )
+            continue
+        _, file_body = parse_document(file_response.get("text", ""), file_response.get("content_type", "text/plain"))
+        file_snippets = extract_prompt_file_snippets(file_body, keywords, max_chars, snippets_per_file)
+        if not file_snippets:
+            continue
+        text_for_filter = " ".join([str(item.get("path") or ""), " ".join(file_snippets)])
+        matched_filter = source_text_matches(source, text_for_filter)
+        rows.append(
+            {
+                "kind": "source_scan",
+                "source_id": source["id"],
+                "source_type": source["type"],
+                "provider": "github_file",
+                "trust": source.get("trust", "unknown"),
+                "url": item.get("html_url"),
+                "status": file_response.get("status"),
+                "ok": matched_filter,
+                "filter_miss": not matched_filter,
+                "title": f"{repo}:{item.get('path')}",
+                "file_path": item.get("path"),
+                "snippets": file_snippets,
+                "risk_flags": risk_flags(" ".join(file_snippets), config.get("risk_terms", [])),
+                "file_size": item.get("size"),
+            }
+        )
+    return rows
 
 
 def scan_github_search(source: dict[str, Any], config: dict[str, Any], token: str | None) -> list[dict[str, Any]]:

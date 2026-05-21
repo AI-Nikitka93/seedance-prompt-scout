@@ -76,7 +76,62 @@
       "enabled": true,
       "trust": "community-collection",
       "repo": "HuyLe82US/awesome-seedance-prompts",
+      "crawl_paths": [
+        "prompts"
+      ],
+      "max_depth": 3,
+      "max_files": 32,
+      "snippets_per_file": 2,
+      "must_include_any": [
+        "seedance",
+        "prompt",
+        "camera",
+        "shot",
+        "cinematic"
+      ],
       "notes": "Community prompt list found during initial local lab research."
+    },
+    {
+      "id": "saber_awesome_seedance_prompts",
+      "type": "github_repo",
+      "enabled": true,
+      "trust": "community-collection-prompt-files",
+      "repo": "saber007104/awesome-seedance-prompts",
+      "crawl_paths": [
+        "prompts"
+      ],
+      "max_depth": 3,
+      "max_files": 32,
+      "snippets_per_file": 2,
+      "must_include_any": [
+        "seedance",
+        "prompt",
+        "camera",
+        "shot",
+        "cinematic"
+      ],
+      "notes": "Community prompt repo discovered by GitHub Search; crawls prompt files with limits."
+    },
+    {
+      "id": "martiniart_awesome_seedance_2_prompt",
+      "type": "github_repo",
+      "enabled": true,
+      "trust": "community-collection-prompt-files",
+      "repo": "MartiniArt/awesome-seedance-2-prompt",
+      "crawl_paths": [
+        "prompts"
+      ],
+      "max_depth": 3,
+      "max_files": 32,
+      "snippets_per_file": 2,
+      "must_include_any": [
+        "seedance",
+        "prompt",
+        "camera",
+        "shot",
+        "cinematic"
+      ],
+      "notes": "Community prompt repo discovered by GitHub Search; crawls prompt files with limits."
     },
     {
       "id": "youmind_openlab_seedance_2_prompts",

@@ -2,12 +2,12 @@
 
 ## Summary
 
-- Sources scanned: 76
-- OK sources/items: 36
+- Sources scanned: 143
+- OK sources/items: 100
 - Disabled sources/items: 2
 - Risk-flagged sources/items: 2
-- Candidate snippets this run: 74
-- Newly appended candidates: 74
+- Candidate snippets this run: 204
+- Newly appended candidates: 132
 
 ## Top Candidates
 
@@ -51,6 +51,22 @@
 
 > o joint generation, Seedance 2.0 delivers an ultra-realistic immersive experience. Create with Director-level Control Supporting images, audios and videos as references, Seedance 2.0 enables creators to transform an idea into visuals with full control over performance, lighting, shadow, and camera movement. Empower Creativity Seedance 2.0 delivers cinematic output aligned with industry standards, driving efficiency gains across the industry. Model Performance Below are the results of Seedance 2.0 in internal benchmarks using SeedVideoBench-2.0. SeedVideoBench-2.0: Multi-Dimensional Evaluation Seedance 2.0 is in the leading position in various dimensions across different types of tasks. Text...
 
+### HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+
+- Score: 17
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+- Trust: community-collection
+
+> The following was generated using the prompts from version 1. Video generation: 10-second music video with beat syncing. 10 seconds, music video with beat syncing, 16:9 or 9:16. Here are 3 different style versions: Version 1: K-pop girl group - fast cut beat syncing (high-energy stage) Seedance 2.0 Prompts: 10-second K-pop girl group MV beat syncing footage, 2.35:1 widescreen, 24fps, 8 fast cut shots. 0-1 second: Low-angle shot, four girl group members standing in a triangular formation on the stage floor, lights flashing with the beat, the stage "seems to vibrate," all members simultaneously inhale in preparation; 2-3 seconds: Close-up of the lead vocalist in the center, breath and eyes gr...
+
+### saber007104/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+
+- Score: 17
+- Source: https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+- Trust: community-collection-prompt-files
+
+> The following was generated using the prompts from version 1. Video generation: 10-second music video with beat syncing. 10 seconds, music video with beat syncing, 16:9 or 9:16. Here are 3 different style versions: Version 1: K-pop girl group - fast cut beat syncing (high-energy stage) Seedance 2.0 Prompts: 10-second K-pop girl group MV beat syncing footage, 2.35:1 widescreen, 24fps, 8 fast cut shots. 0-1 second: Low-angle shot, four girl group members standing in a triangular formation on the stage floor, lights flashing with the beat, the stage "seems to vibrate," all members simultaneously inhale in preparation; 2-3 seconds: Close-up of the lead vocalist in the center, breath and eyes gr...
+
 ### fal-ai/seedance-2.0-api
 
 - Score: 15
@@ -58,6 +74,38 @@
 - Trust: api-reference
 
 > https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org) [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020+-yellow.svg)](https://nodejs.org) [![fal.ai](https://img.shields.io/badge/Platform-fal.ai-purple.svg)](https://fal.ai) The official API for **Seedance 2.0** - ByteDance's most advanced video generation model. Cinematic-quality output with native audio, real-world physics, and director-level camera control. Available now on [fal.ai](https://fal.ai). > **[Get Started](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)** - Try Seedance 2.0 directly on fal.ai. ## What is Seedance 2....
+
+### HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+
+- Score: 15
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+- Trust: community-collection
+
+> Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid text, captions, watermarks, logos. Stress camera movement: smooth parallax, consistent objects, stable faces; no text
+
+### HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+
+- Score: 15
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+- Trust: community-collection
+
+> # 10s Boxing Practice Template *Gritty gym sparring - handheld circling, sweat impacts, stable identity.* https://github.com/user-attachments/assets/6a78ecc4-9630-4373-a564-64b56fb27377 **Source:** [AIVideoDotCom](https://x.com/AIVideoDotCom) - [Post](https://x.com/AIVideoDotCom/status/2021708002286501951) · _Created: February 11_ **Prompt:** ```text Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid tex...
+
+### saber007104/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+
+- Score: 15
+- Source: https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+- Trust: community-collection-prompt-files
+
+> Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid text, captions, watermarks, logos. Stress camera movement: smooth parallax, consistent objects, stable faces; no text
+
+### saber007104/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+
+- Score: 15
+- Source: https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+- Trust: community-collection-prompt-files
+
+> # 10s Boxing Practice Template *Gritty gym sparring - handheld circling, sweat impacts, stable identity.* https://github.com/user-attachments/assets/6a78ecc4-9630-4373-a564-64b56fb27377 **Source:** [AIVideoDotCom](https://x.com/AIVideoDotCom) - [Post](https://x.com/AIVideoDotCom/status/2021708002286501951) · _Created: February 11_ **Prompt:** ```text Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid tex...
 
 ### Seedance 2.0
 
@@ -115,22 +163,6 @@
 
 > hors not shown) View a PDF of the paper titled Seedance 2.0: Advancing Video Generation for World Complexity, by Team Seedance and 170 other authors View PDF Abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopts a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This allows it to support four input modalities: text, image, audio, and video, by integrating one of the most comprehensive suites of multi-modal content reference and editing capabilities available in the industry to date....
 
-### saber007104/awesome-seedance-prompts
-
-- Score: 13
-- Source: https://github.com/saber007104/awesome-seedance-prompts
-- Trust: discovery
-
-> saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with proven results, clear sources, and ready-to-use templates for faster content generation. ['ai', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'prompts', 'prompts-template', 'seedance', 'seedance-api', 'seedance2', 'text-to-video', 'video', '
-
-### saber007104/awesome-seedance-prompts
-
-- Score: 13
-- Source: https://github.com/saber007104/awesome-seedance-prompts
-- Trust: discovery
-
-> saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with proven results, clear sources, and ready-to-use templates for faster content generation. ['ai', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'prompts', 'prompts-template', 'seedance', 'seedance-api', 'seedance2', 'text-to-video', 'video', 'video-g
-
 ### YouMind-OpenLab/awesome-seedance-2-prompts
 
 - Score: 13
@@ -139,38 +171,6 @@
 
 > YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
 
-### YouMind-OpenLab/awesome-seedance-2-prompts
-
-- Score: 13
-- Source: https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- Trust: discovery
-
-> YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video-prompt']
-
-### HuyLe82US/awesome-seedance-prompts
-
-- Score: 13
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
-- Trust: community-collection
-
-> HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
-
-### HuyLe82US/awesome-seedance-prompts
-
-- Score: 13
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
-- Trust: community-collection
-
-> HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-enginee
-
-### HuyLe82US/awesome-seedance-prompts
-
-- Score: 13
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
-- Trust: community-collection
-
-> HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'pr
-
 ## Source Status
 
 - `bytedance_seedance_2_official` ok=True status=200 disabled=False risk=[] url=https://seed.bytedance.com/en/seedance2_0
@@ -178,31 +178,98 @@
 - `fal_ai_seedance_api` ok=True status=200 disabled=False risk=[] url=https://github.com/fal-ai/seedance-2.0-api
 - `rich5000_seedance_prompt_guide` ok=True status=200 disabled=False risk=[] url=https://github.com/rich5000/seedance-prompt-guide
 - `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/README.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/cathedral-beneath-the-black-sea.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/charismatic-vs-noodle-monster.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/explosion-and-physic-scene.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/islands-of-thunder.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/john-woo-style-bullet-ballet-in-a-tight-corridor.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/magical-transformation.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/skyline-titan-chase.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/suit-vs-suit-corridor-cover-up.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/tokyo-race-scene.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/02-commercial-product/README.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/02-commercial-product/hyperdrive-through-the-megacity.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/02-commercial-product/project-y-rise-above-the-streets.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/360-sweet-spot-selfie-reel.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/README.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/upright-paws-a-workplace-crush.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/04-action-fight/README.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/04-action-fight/bamboo-run-duel-at-dusk.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/04-action-fight/indian-Bollywood-action.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/04-action-fight/modern-air-combat-cinematic-template.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/04-action-fight/three-way-kill-box-suit-assassin-unknown.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/04-action-fight/wu-kong-vs-homelander.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/3d-lego-assembly-time-lapse.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/README.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/azure-ascension-live-action-saiyan-duel.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/gadget-cat-vs-web-hero-showdown.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/sailormoon-bedroom-victory-chat.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/06-drama-romance/README.md
+- `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/06-drama-romance/cockpit-panic-sequence.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/README.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/cathedral-beneath-the-black-sea.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/charismatic-vs-noodle-monster.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/explosion-and-physic-scene.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/islands-of-thunder.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/john-woo-style-bullet-ballet-in-a-tight-corridor.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/magical-transformation.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/skyline-titan-chase.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/suit-vs-suit-corridor-cover-up.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/tokyo-race-scene.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/02-commercial-product/README.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/02-commercial-product/hyperdrive-through-the-megacity.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/02-commercial-product/project-y-rise-above-the-streets.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/360-sweet-spot-selfie-reel.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/README.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/03-ugc-social/upright-paws-a-workplace-crush.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/04-action-fight/README.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/04-action-fight/bamboo-run-duel-at-dusk.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/04-action-fight/indian-Bollywood-action.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/04-action-fight/modern-air-combat-cinematic-template.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/04-action-fight/three-way-kill-box-suit-assassin-unknown.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/04-action-fight/wu-kong-vs-homelander.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/3d-lego-assembly-time-lapse.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/README.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/azure-ascension-live-action-saiyan-duel.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/gadget-cat-vs-web-hero-showdown.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/sailormoon-bedroom-victory-chat.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/06-drama-romance/README.md
+- `saber_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/06-drama-romance/cockpit-panic-sequence.md
+- `martiniart_awesome_seedance_2_prompt` ok=True status=200 disabled=False risk=[] url=https://github.com/MartiniArt/awesome-seedance-2-prompt
+- `martiniart_awesome_seedance_2_prompt` ok=True status=200 disabled=False risk=[] url=https://github.com/MartiniArt/awesome-seedance-2-prompt/blob/main/prompts/commercial-use-cases.md
 - `youmind_openlab_seedance_2_prompts` ok=True status=200 disabled=False risk=[bypass] url=https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/aishadahesh/uoh-ay26
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/graycyrus/automation-review-pr
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/pabloldias/user-story-generator
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/n1ozzy/beauty
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/JessiP23/mcp-director
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/yologdev/yopedia
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/HaiderZaidiDev/langsmith-fsi-model-eval-kit
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/ujeenet/rustango
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/AI-Nikitka93/seedance-prompt-scout
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Blandmarrow/Dataset-manager
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/bloodf/cortexos
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/larsalberyd-prog/lis-core
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/haaaomes-ctrl/self-tape-studio
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/CaidonW/Electrum-Wallet-Multi-Crypto-Secure-Gui-Multi-Coin-Storage-Web-Browser
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/NeoKco/plataforma_paas
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Globussoft-Technologies/medcore
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Ab-verse/collector
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/aws-samples/sample-GEDD
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/michael-x86/code
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/hyp3rd/macro-calculator
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/alisajidd565-blip/gumroadfirstproject
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Manikanta-Reddy-Pasala/AIForgeCrew
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/andreabbelli-glitch/japanese-pretrainer
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/dmarostega/checkreport
+- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/poweredbyai-directory/best-ai-tools-poweredbyai
+- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/wangchuxiaoji-oss/doubao2api
+- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/bchenner/ugc-content-pipeline
+- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Sogni-AI/sogni-creative-agent-skill
+- `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
+- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/JessiP23/wm-cli
+- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/cyber-wojtek/Flowith-API
 - `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/JessiP23/mcp-director
 - `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/howells/motif
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/mightyhuman101/seedance2-skill
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/skekdkkddk/elementsix-skills
-- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/sleepyseamonster/ShortPulse
-- `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/Iwang-f/promptforge
-- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/poweredbyai-directory/best-ai-tools-poweredbyai
-- `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/JessiP23/wm-cli
-- `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/MartiniArt/awesome-seedance-2-prompt
-- `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Semonxue/awesome-video-prompts
 - `huggingface_seedance_hub_search` ok=True status=200 disabled=False risk=[] url=https://huggingface.co/seedance2ai/Seedance-2-AI-Video-Generator
 - `huggingface_seedance_hub_search` ok=True status=200 disabled=False risk=[] url=https://huggingface.co/qy-upup/seedance-ai-video
 - `huggingface_seedance_hub_search` ok=True status=200 disabled=False risk=[] url=https://huggingface.co/Falahx/seedance-ai-video
