@@ -3,11 +3,11 @@
 ## Summary
 
 - Sources scanned: 143
-- OK sources/items: 100
+- OK sources/items: 101
 - Disabled sources/items: 2
 - Risk-flagged sources/items: 2
-- Candidate snippets this run: 204
-- Newly appended candidates: 132
+- Candidate snippets this run: 205
+- Newly appended candidates: 1
 
 ## Top Candidates
 
@@ -246,18 +246,18 @@
 - `martiniart_awesome_seedance_2_prompt` ok=True status=200 disabled=False risk=[] url=https://github.com/MartiniArt/awesome-seedance-2-prompt
 - `martiniart_awesome_seedance_2_prompt` ok=True status=200 disabled=False risk=[] url=https://github.com/MartiniArt/awesome-seedance-2-prompt/blob/main/prompts/commercial-use-cases.md
 - `youmind_openlab_seedance_2_prompts` ok=True status=200 disabled=False risk=[bypass] url=https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/haaaomes-ctrl/self-tape-studio
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/CaidonW/Electrum-Wallet-Multi-Crypto-Secure-Gui-Multi-Coin-Storage-Web-Browser
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/NeoKco/plataforma_paas
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Globussoft-Technologies/medcore
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Ab-verse/collector
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/aws-samples/sample-GEDD
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/michael-x86/code
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/hyp3rd/macro-calculator
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/alisajidd565-blip/gumroadfirstproject
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/Manikanta-Reddy-Pasala/AIForgeCrew
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/andreabbelli-glitch/japanese-pretrainer
-- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/dmarostega/checkreport
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/dicnunz/helixdiff
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/PotemkinAlexey/universal-parser-engine
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/AI-Nikitka93/seedance-prompt-scout
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/einitbarajas/citas-ferragro
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/HunterHillegas/alpine-ops-openai-agent-voice-demo
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/tinycld/bootstrap
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/infouniwater/uniwater-web
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/jedbjorn/dos-arch
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/ahardy42/proompt-goblin
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/clagentic/clagentic-lite
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/ScareCrowOrg/artifacts
+- `github_seedance_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/andre-kuzminykh/manager
 - `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/poweredbyai-directory/best-ai-tools-poweredbyai
 - `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/wangchuxiaoji-oss/doubao2api
 - `github_seedance_2_video_prompt_search` ok=False status=200 disabled=False risk=[] url=https://github.com/bchenner/ugc-content-pipeline
