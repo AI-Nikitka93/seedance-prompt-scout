@@ -7,7 +7,7 @@
 - Disabled sources/items: 2
 - Risk-flagged sources/items: 2
 - Candidate snippets this run: 91
-- Newly appended candidates: 91
+- Newly appended candidates: 13
 
 ## Top Candidates
 
@@ -179,18 +179,19 @@
 - `rich5000_seedance_prompt_guide` ok=True status=200 disabled=False risk=[] url=https://github.com/rich5000/seedance-prompt-guide
 - `huyle_awesome_seedance_prompts` ok=True status=200 disabled=False risk=[] url=https://github.com/HuyLe82US/awesome-seedance-prompts
 - `youmind_openlab_seedance_2_prompts` ok=True status=200 disabled=False risk=[bypass] url=https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/courtneydowns/revival-bible-v3
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/NBRINDAL/civiclogos-site
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/shrimbly/book-the-lakehouse
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/canfieldjuan/ATLAS
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/durgasravan21-prog/skill-badge
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/krisshkodrani/OpenSidebar
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/Dicklesworthstone/eidetic_engine_cli
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/chanthaphan/uifactory
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/kkali4892/ComfyUI-AceStep_SFT
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/ArantesJoao/banco-imobiliario-manager
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/CamiloAndresGTRUniandes/lucy-ai
-- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/neelesh1206/market-mind
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/meetbhai78/botad-bus-tracker
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/ansh027/the-council
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/r445hsyj7p-png/easm
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/Anasabubakar/MoreMur
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/richducat/eb28.co
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/Life-Ambassadors-International/TEQUMSA_EMERGE
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/fuhailong1998/ai-news-bot
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/AI-Nikitka93/seedance-prompt-scout
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/rachelianaditya-hash/klerekk
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/mitchross/talos-argocd-proxmox
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/mille-s/WikipediaPage_Generator
+- `github_seedance_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/csr1010/autonomous_planning_agents
+- `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/howells/motif
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/saber007104/awesome-seedance-prompts
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/mightyhuman101/seedance2-skill
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/skekdkkddk/elementsix-skills
@@ -202,7 +203,6 @@
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/JessiP23/wm-cli
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/MartiniArt/awesome-seedance-2-prompt
 - `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/Semonxue/awesome-video-prompts
-- `github_seedance_2_video_prompt_search` ok=True status=200 disabled=False risk=[] url=https://github.com/wangchuxiaoji-oss/doubao2api
 - `huggingface_seedance_hub_search` ok=True status=200 disabled=False risk=[] url=https://huggingface.co/seedance2ai/Seedance-2-AI-Video-Generator
 - `huggingface_seedance_hub_search` ok=True status=200 disabled=False risk=[] url=https://huggingface.co/qy-upup/seedance-ai-video
 - `huggingface_seedance_hub_search` ok=True status=200 disabled=False risk=[] url=https://huggingface.co/Falahx/seedance-ai-video

@@ -362,6 +362,14 @@ rich5000/seedance-prompt-guide Comprehensive prompt engineering guide for ByteDa
 
 rich5000/seedance-prompt-guide Comprehensive prompt engineering guide for ByteDance Seedance 2.0 video generation | 即梦 Seedance 2.0 提示词指南 ['ai-video', 'bytedance', 'jimeng', 'prompt-engineering', 'seedance', 'seedance-2', 'video-generation'] 2026-02-09T13:17:02Z https://github.com/rich5000/seedance-prompt-guide # Seedance Prompt Guide > An AI skill for crafting high-quali
 
+## AI-Nikitka93/seedance-prompt-scout
+
+- Score: 8
+- Source: https://github.com/AI-Nikitka93/seedance-prompt-scout
+- Status: candidate
+
+AI-Nikitka93/seedance-prompt-scout External GitHub Actions scout for Seedance 2.0 prompt research Python 2026-05-21T17:08:37Z https://github.com/AI-Nikitka93/seedance-prompt-scout
+
 ## Is it possible to prompt Gemini a video and get back relevant screenshots from the video
 
 - Score: 8
@@ -393,12 +401,4 @@ fal-ai/seedance-2.0-api Seedance 2.0 API - Official text-to-video and image-to-v
 - Status: candidate
 
 fal-ai/seedance-2.0-api Seedance 2.0 API - Official text-to-video and image-to-video API by ByteDance, available on fal.ai ['ai-video', 'bytedance', 'fal-ai', 'image-to-video', 'seedance', 'seedance-2', 'seedance-api', 'text-to-video', 'video-generation'] 2026-04-09T21:22:11Z https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org) [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020+-yellow.svg)](https://nodejs.org) [![fal.ai](https:/
-
-## fal-ai/seedance-2.0-api
-
-- Score: 7
-- Source: https://github.com/fal-ai/seedance-2.0-api
-- Status: candidate
-
-fal-ai/seedance-2.0-api Seedance 2.0 API - Official text-to-video and image-to-video API by ByteDance, available on fal.ai ['ai-video', 'bytedance', 'fal-ai', 'image-to-video', 'seedance', 'seedance-2', 'seedance-api', 'text-to-video', 'video-generation'] 2026-04-09T21:22:11Z https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org) [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020+-yellow.svg)](https://nodejs.org) [![fal.ai](https://img.shields
 
