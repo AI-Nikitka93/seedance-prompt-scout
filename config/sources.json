@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "updated": "2026-05-21",
+  "policy": {
+    "store_full_pages": false,
+    "store_short_snippets_only": true,
+    "max_snippet_chars": 700,
+    "respect_terms_and_robots": true,
+    "no_login_bypass_or_paywall_bypass": true
+  },
+  "keywords": [
+    "seedance",
+    "seedance 2",
+    "seedance 2.0",
+    "prompt",
+    "prompts",
+    "camera",
+    "shot",
+    "cinematic",
+    "timeline",
+    "i2v",
+    "t2v",
+    "reference image",
+    "first frame",
+    "@Image",
+    "@Video",
+    "duration",
+    "aspect ratio"
+  ],
+  "risk_terms": [
+    "jailbreak",
+    "bypass",
+    "paywall",
+    "uncensored",
+    "nsfw",
+    "deepfake",
+    "celebrity deepfake",
+    "impersonation"
+  ],
+  "sources": [
+    {
+      "id": "bytedance_seedance_2_official",
+      "type": "web",
+      "enabled": true,
+      "trust": "official",
+      "url": "https://seed.bytedance.com/en/seedance2_0",
+      "notes": "Official Seedance 2.0 model page."
+    },
+    {
+      "id": "seedance_2_arxiv_report",
+      "type": "web",
+      "enabled": true,
+      "trust": "primary-paper",
+      "url": "https://arxiv.org/abs/2604.14148",
+      "notes": "Primary technical report page."
+    },
+    {
+      "id": "fal_ai_seedance_api",
+      "type": "github_repo",
+      "enabled": true,
+      "trust": "api-reference",
+      "repo": "fal-ai/seedance-2.0-api",
+      "notes": "Public API reference examples and parameter names."
+    },
+    {
+      "id": "rich5000_seedance_prompt_guide",
+      "type": "github_repo",
+      "enabled": true,
+      "trust": "community-guide",
+      "repo": "rich5000/seedance-prompt-guide",
+      "notes": "Community guide found during initial local lab research."
+    },
+    {
+      "id": "huyle_awesome_seedance_prompts",
+      "type": "github_repo",
+      "enabled": true,
+      "trust": "community-collection",
+      "repo": "HuyLe82US/awesome-seedance-prompts",
+      "notes": "Community prompt list found during initial local lab research."
+    },
+    {
+      "id": "youmind_openlab_seedance_2_prompts",
+      "type": "github_repo",
+      "enabled": true,
+      "trust": "community-collection",
+      "repo": "YouMind-OpenLab/awesome-seedance-2-prompts",
+      "notes": "Community Seedance 2 prompt collection found during initial local lab research."
+    },
+    {
+      "id": "github_seedance_prompt_search",
+      "type": "github_search",
+      "enabled": true,
+      "trust": "discovery",
+      "query": "seedance prompt in:readme,description",
+      "must_include": [
+        "seedance"
+      ],
+      "limit": 12,
+      "notes": "Discovers newly updated GitHub repos mentioning Seedance prompts."
+    },
+    {
+      "id": "github_seedance_2_video_prompt_search",
+      "type": "github_search",
+      "enabled": true,
+      "trust": "discovery",
+      "query": "\"seedance 2\" \"video prompt\" in:readme,description",
+      "must_include": [
+        "seedance"
+      ],
+      "limit": 12,
+      "notes": "Narrow search for Seedance 2 video-prompt repos."
+    },
+    {
+      "id": "huggingface_seedance_hub_search",
+      "type": "huggingface_search",
+      "enabled": true,
+      "trust": "free-no-key-hub-search",
+      "queries": [
+        "seedance",
+        "seedance prompt",
+        "video prompt generation",
+        "image to video prompt"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video prompt",
+        "image-to-video",
+        "image to video",
+        "text-to-video"
+      ],
+      "repo_types": [
+        "models",
+        "datasets",
+        "spaces"
+      ],
+      "limit": 8,
+      "notes": "Free no-key Hugging Face Hub search across models, datasets, and Spaces metadata."
+    },
+    {
+      "id": "arxiv_video_generation_prompt_search",
+      "type": "arxiv_search",
+      "enabled": false,
+      "trust": "free-no-key-research-search-disabled",
+      "queries": [
+        "all:Seedance",
+        "all:video AND all:generation AND all:prompt",
+        "all:image-to-video AND all:prompt"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video generation",
+        "image-to-video",
+        "prompt"
+      ],
+      "limit": 5,
+      "delay_seconds": 3,
+      "notes": "Disabled by default after local smoke saw timeout/429 and low prompt-pack value. Enable for technical paper research only; obey arXiv polite delay."
+    },
+    {
+      "id": "stackexchange_ai_video_prompt_search",
+      "type": "stackexchange_search",
+      "enabled": true,
+      "trust": "free-no-key-qa-search",
+      "queries": [
+        "Seedance prompt",
+        "video generation prompt",
+        "image to video prompt"
+      ],
+      "sites": [
+        "ai",
+        "stackoverflow",
+        "webapps"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video generation",
+        "image to video",
+        "prompt"
+      ],
+      "limit": 5,
+      "notes": "Free no-key Stack Exchange API search for technical references and public Q&A. Optional STACKAPPS_KEY raises quota."
+    },
+    {
+      "id": "brave_web_seedance_prompt_search",
+      "type": "brave_search",
+      "enabled": true,
+      "trust": "optional-free-credit-web-search",
+      "required_secret": "BRAVE_SEARCH_API_KEY",
+      "queries": [
+        "Seedance 2.0 prompt examples",
+        "Seedance prompt guide",
+        "Seedance video prompt camera movement",
+        "ByteDance Seedance prompt",
+        "site:github.com Seedance prompt",
+        "site:reddit.com Seedance prompt"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video prompt",
+        "image to video",
+        "text-to-video"
+      ],
+      "limit": 6,
+      "notes": "Optional broad web search. Skips unless GitHub secret BRAVE_SEARCH_API_KEY is set."
+    },
+    {
+      "id": "tavily_web_seedance_prompt_search",
+      "type": "tavily_search",
+      "enabled": true,
+      "trust": "optional-free-credit-ai-search",
+      "required_secret": "TAVILY_API_KEY",
+      "queries": [
+        "latest Seedance 2.0 prompts and prompt guide",
+        "Seedance 2 prompt examples for cinematic video",
+        "Seedance camera motion prompt tutorial",
+        "best AI video prompts Seedance"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video prompt",
+        "camera motion",
+        "prompt"
+      ],
+      "search_depth": "basic",
+      "limit": 6,
+      "notes": "Optional Tavily search. Basic depth keeps free credits dense. Skips unless TAVILY_API_KEY is set."
+    },
+    {
+      "id": "exa_web_seedance_prompt_search",
+      "type": "exa_search",
+      "enabled": true,
+      "trust": "optional-free-credit-semantic-search",
+      "required_secret": "EXA_API_KEY",
+      "queries": [
+        "Seedance 2.0 prompt examples",
+        "AI video generator prompt guide camera motion timeline",
+        "Seedance reference image video prompt"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video prompt",
+        "image to video",
+        "camera motion"
+      ],
+      "search_type": "auto",
+      "limit": 6,
+      "notes": "Optional semantic web search. Skips unless EXA_API_KEY is set."
+    },
+    {
+      "id": "serpapi_google_seedance_prompt_search",
+      "type": "serpapi_search",
+      "enabled": true,
+      "trust": "optional-free-credit-serp-search",
+      "required_secret": "SERPAPI_API_KEY",
+      "queries": [
+        "Seedance 2.0 prompt examples",
+        "Seedance prompt guide",
+        "best Seedance video prompts"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video prompt",
+        "prompt guide"
+      ],
+      "limit": 6,
+      "notes": "Optional Google SERP provider with small free tier. Skips unless SERPAPI_API_KEY is set."
+    },
+    {
+      "id": "youtube_seedance_prompt_video_search",
+      "type": "youtube_search",
+      "enabled": true,
+      "trust": "optional-free-quota-video-search",
+      "required_secret": "YOUTUBE_API_KEY",
+      "queries": [
+        "Seedance 2 prompt",
+        "Seedance prompt tutorial",
+        "AI video prompt Seedance"
+      ],
+      "must_include_any": [
+        "seedance",
+        "video prompt",
+        "prompt"
+      ],
+      "limit": 5,
+      "notes": "Optional YouTube Data API search for titles/descriptions only. search.list costs 100 quota units per query."
+    },
+    {
+      "id": "reddit_seedance_search_candidate",
+      "type": "web",
+      "enabled": false,
+      "trust": "candidate-disabled",
+      "url": "https://www.reddit.com/search/?q=Seedance%202%20prompt",
+      "notes": "Disabled by default. Use official APIs/allowed access only; do not bypass rate limits or anti-bot controls."
+    }
+  ]
+}
