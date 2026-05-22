@@ -7,7 +7,7 @@
 - ежедневно или вручную открывает список публичных источников из `config/sources.json`;
 - проверяет официальные страницы, GitHub-репозитории, GitHub Search и выбранные публичные guide-страницы;
 - вытаскивает короткие prompt-сигналы, ссылки, дату проверки, тип источника и риск-флаги;
-- пишет результаты в `data/`, `reports/` и `prompts/`;
+- пишет аккуратную витрину в `dashboard/`, review inbox в `prompts/`, отчеты в `reports/` и raw data в `data/`;
 - сам коммитит изменения обратно в репозиторий через `GITHUB_TOKEN`.
 
 ## Что не делает
@@ -25,7 +25,11 @@
 3. В GitHub включить Actions.
 4. В `Settings -> Actions -> General -> Workflow permissions` выбрать `Read and write permissions`.
 5. Открыть `Actions -> Seedance Prompt Scout -> Run workflow`.
-6. После прогона смотреть:
+6. После прогона сначала смотреть:
+   - `dashboard/README.md`
+   - `prompts/LATEST_candidate_index.md`
+   - `reports/LATEST_seedance_prompt_scout.md`
+7. Если нужен raw audit, смотреть:
    - `reports/YYYY-MM-DD_seedance_prompt_scout.md`
    - `data/YYYY-MM-DD_sources.jsonl`
    - `data/candidate_prompts.jsonl`

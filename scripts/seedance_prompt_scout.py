@@ -27,6 +27,7 @@ CONFIG_PATH = ROOT / "config" / "sources.json"
 DATA_DIR = ROOT / "data"
 REPORTS_DIR = ROOT / "reports"
 PROMPTS_DIR = ROOT / "prompts"
+DASHBOARD_DIR = ROOT / "dashboard"
 
 DEFAULT_KEYWORDS = [
     "seedance",
@@ -1081,73 +1082,266 @@ def build_candidates(scans: list[dict[str, Any]], config: dict[str, Any], run_da
     return candidates
 
 
+def markdown_cell(value: Any) -> str:
+    text = normalize_ws(str(value if value is not None else ""))
+    return text.replace("|", "\\|")
+
+
+def short_text(value: Any, limit: int) -> str:
+    text = normalize_ws(str(value if value is not None else ""))
+    if len(text) <= limit:
+        return text
+    return text[: max(0, limit - 1)].rstrip() + "..."
+
+
+def candidate_title(item: dict[str, Any]) -> str:
+    title = short_text(item.get("title") or item.get("source_id") or "Untitled candidate", 120)
+    return title or "Untitled candidate"
+
+
+def unique_candidates(candidates: list[dict[str, Any]], limit: int, *, max_per_source_url: int = 1) -> list[dict[str, Any]]:
+    """Keep the review surface readable by removing mirrored/near-identical snippets."""
+    seen: set[str] = set()
+    source_url_counts: dict[str, int] = {}
+    unique: list[dict[str, Any]] = []
+    for item in candidates:
+        snippet_key = short_text(str(item.get("snippet") or "").lower(), 520)
+        key = stable_id(snippet_key)
+        if key in seen:
+            continue
+        source_url = str(item.get("source_url") or item.get("source_id") or "")
+        if max_per_source_url > 0 and source_url_counts.get(source_url, 0) >= max_per_source_url:
+            continue
+        seen.add(key)
+        source_url_counts[source_url] = source_url_counts.get(source_url, 0) + 1
+        unique.append(item)
+        if len(unique) >= limit:
+            break
+    return unique
+
+
+def scan_bucket(scan: dict[str, Any]) -> str:
+    error_text = str(scan.get("error") or "")
+    if scan.get("disabled"):
+        return "disabled"
+    if scan.get("risk_flags"):
+        return "risk"
+    if "Set GitHub Actions secret" in error_text:
+        return "missing_secret"
+    if scan.get("filter_miss"):
+        return "filtered"
+    if scan.get("ok"):
+        return "ok"
+    return "error"
+
+
+def source_status_summary(scans: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    groups: dict[str, dict[str, Any]] = {}
+    for scan in scans:
+        source_id = str(scan.get("source_id") or "unknown")
+        group = groups.setdefault(
+            source_id,
+            {
+                "source_id": source_id,
+                "type": scan.get("source_type") or "",
+                "trust": scan.get("trust") or "",
+                "total": 0,
+                "ok": 0,
+                "filtered": 0,
+                "missing_secret": 0,
+                "disabled": 0,
+                "risk": 0,
+                "error": 0,
+            },
+        )
+        group["total"] += 1
+        bucket = scan_bucket(scan)
+        group[bucket] += 1
+    return sorted(groups.values(), key=lambda row: (str(row["source_id"])))
+
+
+def source_status_table(scans: list[dict[str, Any]]) -> list[str]:
+    lines = [
+        "| Source | Type | OK | Filtered | Missing secret | Disabled | Risk | Error |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for row in source_status_summary(scans):
+        lines.append(
+            "| "
+            + " | ".join(
+                [
+                    f"`{markdown_cell(row['source_id'])}`",
+                    markdown_cell(row["type"]),
+                    str(row["ok"]),
+                    str(row["filtered"]),
+                    str(row["missing_secret"]),
+                    str(row["disabled"]),
+                    str(row["risk"]),
+                    str(row["error"]),
+                ]
+            )
+            + " |"
+        )
+    return lines
+
+
+def skipped_source_lines(scans: list[dict[str, Any]], *, limit: int = 30) -> list[str]:
+    skipped = [scan for scan in scans if scan_bucket(scan) in {"missing_secret", "disabled", "error"}]
+    lines = [
+        "| Source | Reason | URL / target |",
+        "|---|---|---|",
+    ]
+    for scan in skipped[:limit]:
+        reason = scan.get("error") or scan_bucket(scan)
+        url = scan.get("url") or scan.get("repo") or scan.get("query") or ""
+        lines.append(
+            f"| `{markdown_cell(scan.get('source_id'))}` | {markdown_cell(short_text(reason, 140))} | {markdown_cell(short_text(url, 120))} |"
+        )
+    if len(skipped) > limit:
+        lines.append(f"| ... | {len(skipped) - limit} more skipped/error rows in the raw source log |  |")
+    return lines
+
+
+def candidate_card_lines(item: dict[str, Any], index: int) -> list[str]:
+    snippet = short_text(item.get("snippet") or "", 1200)
+    return [
+        f"### {index}. {candidate_title(item)}",
+        "",
+        f"- Score: `{item.get('score')}`",
+        f"- Trust: `{item.get('trust')}`",
+        f"- Source: {item.get('source_url')}",
+        f"- Candidate ID: `{item.get('id')}`",
+        "",
+        "```text",
+        snippet,
+        "```",
+        "",
+    ]
+
+
+def summary_lines(scans: list[dict[str, Any]], candidates: list[dict[str, Any]], appended_count: int) -> list[str]:
+    bucket_counts: dict[str, int] = {"ok": 0, "filtered": 0, "missing_secret": 0, "disabled": 0, "risk": 0, "error": 0}
+    for scan in scans:
+        bucket_counts[scan_bucket(scan)] += 1
+    return [
+        "| Metric | Count |",
+        "|---|---:|",
+        f"| Sources/items scanned | {len(scans)} |",
+        f"| OK | {bucket_counts['ok']} |",
+        f"| Filtered out | {bucket_counts['filtered']} |",
+        f"| Missing secret | {bucket_counts['missing_secret']} |",
+        f"| Disabled by policy | {bucket_counts['disabled']} |",
+        f"| Risk-flagged | {bucket_counts['risk']} |",
+        f"| Other errors | {bucket_counts['error']} |",
+        f"| Candidate snippets this run | {len(candidates)} |",
+        f"| Newly appended candidates | {appended_count} |",
+    ]
+
+
 def write_report(scans: list[dict[str, Any]], candidates: list[dict[str, Any]], run_date: str, appended_count: int) -> None:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     PROMPTS_DIR.mkdir(parents=True, exist_ok=True)
-    ok_count = sum(1 for scan in scans if scan.get("ok"))
-    risky_count = sum(1 for scan in scans if scan.get("risk_flags"))
-    disabled_count = sum(1 for scan in scans if scan.get("disabled"))
+    DASHBOARD_DIR.mkdir(parents=True, exist_ok=True)
+    top_candidates = unique_candidates(candidates, 20, max_per_source_url=1)
+    review_candidates = unique_candidates(candidates, 50, max_per_source_url=1)
 
     report_lines = [
         f"# Seedance Prompt Scout - {run_date}",
         "",
-        "## Summary",
+        "Raw research candidates. Nothing here is an approved best prompt until human/agent review.",
         "",
-        f"- Sources scanned: {len(scans)}",
-        f"- OK sources/items: {ok_count}",
-        f"- Disabled sources/items: {disabled_count}",
-        f"- Risk-flagged sources/items: {risky_count}",
-        f"- Candidate snippets this run: {len(candidates)}",
-        f"- Newly appended candidates: {appended_count}",
+        "## Run Summary",
         "",
-        "## Top Candidates",
+        *summary_lines(scans, candidates, appended_count),
         "",
     ]
-    for item in candidates[:20]:
-        report_lines.extend(
-            [
-                f"### {item['title'] or item['source_id']}",
-                "",
-                f"- Score: {item['score']}",
-                f"- Source: {item['source_url']}",
-                f"- Trust: {item['trust']}",
-                "",
-                "> " + str(item["snippet"]).replace("\n", " ")[:900],
-                "",
-            ]
-        )
-    report_lines.extend(["## Source Status", ""])
+    report_lines.extend(["## Review First", ""])
+    for index, item in enumerate(top_candidates[:10], start=1):
+        report_lines.extend(candidate_card_lines(item, index))
+    report_lines.extend(["## Source Summary", "", *source_status_table(scans), ""])
+    report_lines.extend(["## Skipped / Needs Setup", "", *skipped_source_lines(scans), ""])
+    report_lines.extend(["## Raw Source Status", ""])
     for scan in scans:
         flags = ", ".join(scan.get("risk_flags") or [])
+        reason = scan.get("error") or ("filter miss" if scan.get("filter_miss") else "")
         report_lines.append(
-            f"- `{scan.get('source_id')}` ok={scan.get('ok')} status={scan.get('status')} "
-            f"disabled={bool(scan.get('disabled'))} risk=[{flags}] url={scan.get('url')}"
+            f"- `{scan.get('source_id')}` bucket={scan_bucket(scan)} ok={scan.get('ok')} status={scan.get('status')} "
+            f"risk=[{flags}] reason={short_text(reason, 160)} url={scan.get('url')}"
         )
+    report_text = "\n".join(report_lines) + "\n"
     (REPORTS_DIR / f"{run_date}_seedance_prompt_scout.md").write_text(
-        "\n".join(report_lines) + "\n", encoding="utf-8", newline="\n"
+        report_text, encoding="utf-8", newline="\n"
+    )
+    (REPORTS_DIR / "LATEST_seedance_prompt_scout.md").write_text(
+        report_text, encoding="utf-8", newline="\n"
     )
 
     prompt_lines = [
-        f"# Candidate Prompt Index - {run_date}",
+        f"# Candidate Review Inbox - {run_date}",
         "",
-        "These are raw research candidates, not approved best prompts.",
+        "Copy from here for review. These are raw snippets, not approved best prompts.",
+        "",
+        "## Review Rules",
+        "",
+        "1. Check provenance and license before reuse.",
+        "2. Rewrite into the local Seedance prompt format before promotion.",
+        "3. Reject unsafe, impersonation, NSFW, bypass, or paywall-related candidates.",
+        "",
+        "## Candidates",
         "",
     ]
-    for item in candidates[:50]:
-        prompt_lines.extend(
-            [
-                f"## {item['title'] or item['source_id']}",
-                "",
-                f"- Score: {item['score']}",
-                f"- Source: {item['source_url']}",
-                f"- Status: {item['status']}",
-                "",
-                str(item["snippet"]),
-                "",
-            ]
-        )
+    for index, item in enumerate(review_candidates, start=1):
+        prompt_lines.extend(candidate_card_lines(item, index))
+    prompt_text = "\n".join(prompt_lines) + "\n"
     (PROMPTS_DIR / f"{run_date}_candidate_index.md").write_text(
-        "\n".join(prompt_lines) + "\n", encoding="utf-8", newline="\n"
+        prompt_text, encoding="utf-8", newline="\n"
+    )
+    (PROMPTS_DIR / "LATEST_candidate_index.md").write_text(
+        prompt_text, encoding="utf-8", newline="\n"
+    )
+
+    dashboard_lines = [
+        "# Seedance Prompt Scout Dashboard",
+        "",
+        f"Latest run: `{run_date}`",
+        "",
+        "This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.",
+        "",
+        "## Open First",
+        "",
+        f"- Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)",
+        f"- Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)",
+        f"- Raw source log: [data/{run_date}_sources.jsonl](../data/{run_date}_sources.jsonl)",
+        f"- Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)",
+        "",
+        "## Run Summary",
+        "",
+        *summary_lines(scans, candidates, appended_count),
+        "",
+        "## Best Review Targets",
+        "",
+    ]
+    for index, item in enumerate(top_candidates[:8], start=1):
+        dashboard_lines.extend(candidate_card_lines(item, index))
+    dashboard_lines.extend(["## Source Health", "", *source_status_table(scans), ""])
+    dashboard_lines.extend(["## Skipped / Needs Setup", "", *skipped_source_lines(scans, limit=12), ""])
+    dashboard_lines.extend(
+        [
+            "## Promotion Path",
+            "",
+            "1. Review a candidate from `prompts/LATEST_candidate_index.md`.",
+            "2. Check source, license, and safety status.",
+            "3. Rewrite it into the local Seedance prompt-lab format.",
+            "4. Promote only reviewed material into the local best-prompt library.",
+            "",
+        ]
+    )
+    dashboard_text = "\n".join(dashboard_lines) + "\n"
+    (DASHBOARD_DIR / "README.md").write_text(
+        dashboard_text, encoding="utf-8", newline="\n"
+    )
+    (DASHBOARD_DIR / "latest.md").write_text(
+        dashboard_text, encoding="utf-8", newline="\n"
     )
 
 
@@ -1170,6 +1364,7 @@ def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     PROMPTS_DIR.mkdir(parents=True, exist_ok=True)
+    DASHBOARD_DIR.mkdir(parents=True, exist_ok=True)
 
     scans: list[dict[str, Any]] = []
     for source in config.get("sources", []):

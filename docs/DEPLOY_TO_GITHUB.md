@@ -20,6 +20,7 @@
 - `config/sources.json`
 - `scripts/seedance_prompt_scout.py`
 - `data/`
+- `dashboard/`
 - `reports/`
 - `prompts/`
 - `docs/`
@@ -58,10 +59,15 @@ GitHub путь:
 
 После запуска проверить последний workflow run. Если все нормально, появятся новые файлы:
 
+- `dashboard/README.md`
+- `reports/LATEST_seedance_prompt_scout.md`
+- `prompts/LATEST_candidate_index.md`
 - `reports/YYYY-MM-DD_seedance_prompt_scout.md`
 - `data/YYYY-MM-DD_sources.jsonl`
 - `data/candidate_prompts.jsonl`
 - `prompts/YYYY-MM-DD_candidate_index.md`
+
+Начинать просмотр лучше с `dashboard/README.md`: это аккуратная витрина последнего прогона, а не raw dump.
 
 ## 5. Расписание
 
