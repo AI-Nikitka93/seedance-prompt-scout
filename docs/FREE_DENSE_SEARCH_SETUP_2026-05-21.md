@@ -82,7 +82,7 @@ Default config is intentionally conservative:
 - SerpAPI: 3 queries/run.
 - YouTube: 3 queries/run x 100 units = 300 units/run.
 
-Weekly schedule is safe for all free tiers. Daily schedule is still plausible if only Tavily/Exa/Brave are used lightly, but SerpAPI and YouTube should stay low.
+Daily schedule is the active default for this scout. It is still plausible if only no-key sources and light Tavily/Exa/Brave usage are enabled, but SerpAPI and YouTube should stay low. Weekly schedule remains the safer fallback for very small free quotas.
 
 ## What Changed In This Scaffold
 
