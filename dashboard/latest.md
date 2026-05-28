@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-05-27`
+Latest run: `2026-05-28`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-05-27_sources.jsonl](../data/2026-05-27_sources.jsonl)
+- Raw source log: [data/2026-05-28_sources.jsonl](../data/2026-05-28_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -17,13 +17,13 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 |---|---:|
 | Sources/items scanned | 143 |
 | OK | 100 |
-| Filtered out | 34 |
+| Filtered out | 35 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
-| Risk-flagged | 2 |
+| Risk-flagged | 1 |
 | Other errors | 0 |
-| Candidate snippets this run | 206 |
-| Newly appended candidates | 17 |
+| Candidate snippets this run | 212 |
+| Newly appended candidates | 21 |
 
 ## Best Review Targets
 
@@ -104,15 +104,15 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 YouMind-OpenLab/awesome-seedance-2-prompts ðŸŽ¬ 2000+ curated Seedance 2.0 video generation prompts â€” cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
 ```
 
-### 8. HiAPIAI/awesome-seedance-2-0-prompts
+### 8. saber007104/awesome-seedance-prompts
 
 - Score: `13`
 - Trust: `discovery`
-- Source: https://github.com/HiAPIAI/awesome-seedance-2-0-prompts
-- Candidate ID: `1b57a06ab8ebacac`
+- Source: https://github.com/saber007104/awesome-seedance-prompts
+- Candidate ID: `fa2bcb1831ab947f`
 
 ```text
-HiAPIAI/awesome-seedance-2-0-prompts Awesome Seedance 2.0 video prompt gallery â€” 163 real video examples with OpenAI-compatible HiAPI requests. Built for AI Agents. JavaScript ['ai-art', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-list', 'awesome-lists', 'cinematic', 'generative-ai', 'hiapi', 'image-to-video', 'openai-compatible', 'prompt-engineering', 'seedance
+saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with proven results, clear sources, and ready-to-use templates for faster content generation. ['ai', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'prompts', 'prompts-template', 'seedance', 'seedance-api', 'seedance2', 'text-to-video', 'video', '
 ```
 
 ## Source Health
@@ -124,7 +124,7 @@ HiAPIAI/awesome-seedance-2-0-prompts Awesome Seedance 2.0 video prompt gallery â
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 21 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
@@ -136,7 +136,7 @@ HiAPIAI/awesome-seedance-2-0-prompts Awesome Seedance 2.0 video prompt gallery â
 | `serpapi_google_seedance_prompt_search` | serpapi_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `stackexchange_ai_video_prompt_search` | stackexchange_search | 2 | 12 | 0 | 0 | 1 | 0 |
 | `tavily_web_seedance_prompt_search` | tavily_search | 0 | 0 | 1 | 0 | 0 | 0 |
-| `youmind_openlab_seedance_2_prompts` | github_repo | 0 | 0 | 0 | 0 | 1 | 0 |
+| `youmind_openlab_seedance_2_prompts` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
 | `youtube_seedance_prompt_video_search` | youtube_search | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ## Skipped / Needs Setup
