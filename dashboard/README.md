@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-05-29`
+Latest run: `2026-05-30`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-05-29_sources.jsonl](../data/2026-05-29_sources.jsonl)
+- Raw source log: [data/2026-05-30_sources.jsonl](../data/2026-05-30_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 144 |
-| OK | 101 |
-| Filtered out | 35 |
+| OK | 103 |
+| Filtered out | 34 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
-| Risk-flagged | 1 |
+| Risk-flagged | 0 |
 | Other errors | 0 |
-| Candidate snippets this run | 213 |
-| Newly appended candidates | 20 |
+| Candidate snippets this run | 216 |
+| Newly appended candidates | 23 |
 
 ## Best Review Targets
 
@@ -124,7 +124,7 @@ saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with p
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 22 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
@@ -134,7 +134,7 @@ saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with p
 | `saber_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `seedance_2_arxiv_report` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `serpapi_google_seedance_prompt_search` | serpapi_search | 0 | 0 | 1 | 0 | 0 | 0 |
-| `stackexchange_ai_video_prompt_search` | stackexchange_search | 2 | 12 | 0 | 0 | 1 | 0 |
+| `stackexchange_ai_video_prompt_search` | stackexchange_search | 3 | 12 | 0 | 0 | 0 | 0 |
 | `tavily_web_seedance_prompt_search` | tavily_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `youmind_openlab_seedance_2_prompts` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
 | `youtube_seedance_prompt_video_search` | youtube_search | 0 | 0 | 1 | 0 | 0 | 0 |
