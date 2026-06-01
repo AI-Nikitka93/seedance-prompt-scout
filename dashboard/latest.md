@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-05-31`
+Latest run: `2026-06-01`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-05-31_sources.jsonl](../data/2026-05-31_sources.jsonl)
+- Raw source log: [data/2026-06-01_sources.jsonl](../data/2026-06-01_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 144 |
-| OK | 102 |
-| Filtered out | 35 |
+| OK | 104 |
+| Filtered out | 33 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 0 |
-| Candidate snippets this run | 214 |
-| Newly appended candidates | 19 |
+| Candidate snippets this run | 216 |
+| Newly appended candidates | 24 |
 
 ## Best Review Targets
 
@@ -93,18 +93,7 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity Skip to main content Learn about arXiv becoming an independent nonprofit. We gratefully acknowledge support from the Simons Foundation, member institutions , and all contributors. Donate > cs > arXiv:2604.14148 Help | Advanced Search All fields Title Author Abstract Comments Journal reference AC
 ```
 
-### 7. YouMind-OpenLab/awesome-seedance-2-prompts
-
-- Score: `13`
-- Trust: `discovery`
-- Source: https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- Candidate ID: `fe88c0190d12d7dd`
-
-```text
-YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
-```
-
-### 8. saber007104/awesome-seedance-prompts
+### 7. saber007104/awesome-seedance-prompts
 
 - Score: `13`
 - Trust: `discovery`
@@ -113,6 +102,17 @@ YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video
 
 ```text
 saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with proven results, clear sources, and ready-to-use templates for faster content generation. ['ai', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'prompts', 'prompts-template', 'seedance', 'seedance-api', 'seedance2', 'text-to-video', 'video', '
+```
+
+### 8. iliyanivanovmp-stack/seedance-ugc-ad-generator
+
+- Score: `13`
+- Trust: `discovery`
+- Source: https://github.com/iliyanivanovmp-stack/seedance-ugc-ad-generator
+- Candidate ID: `6eedfefa87a77f26`
+
+```text
+iliyanivanovmp-stack/seedance-ugc-ad-generator Claude Code skill: multi-shot UGC video ads from a product photo via Seedance 2.0 on fal.ai Python 2026-06-01T06:48:55Z https://github.com/iliyanivanovmp-stack/seedance-ugc-ad-generator
 ```
 
 ## Source Health
@@ -124,7 +124,7 @@ saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with p
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 22 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
@@ -134,7 +134,7 @@ saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with p
 | `saber_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `seedance_2_arxiv_report` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `serpapi_google_seedance_prompt_search` | serpapi_search | 0 | 0 | 1 | 0 | 0 | 0 |
-| `stackexchange_ai_video_prompt_search` | stackexchange_search | 3 | 12 | 0 | 0 | 0 | 0 |
+| `stackexchange_ai_video_prompt_search` | stackexchange_search | 4 | 11 | 0 | 0 | 0 | 0 |
 | `tavily_web_seedance_prompt_search` | tavily_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `youmind_openlab_seedance_2_prompts` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
 | `youtube_seedance_prompt_video_search` | youtube_search | 0 | 0 | 1 | 0 | 0 | 0 |
