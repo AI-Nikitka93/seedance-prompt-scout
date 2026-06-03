@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-06-02`
+Latest run: `2026-06-03`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-06-02_sources.jsonl](../data/2026-06-02_sources.jsonl)
+- Raw source log: [data/2026-06-03_sources.jsonl](../data/2026-06-03_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -22,8 +22,8 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 0 |
-| Candidate snippets this run | 217 |
-| Newly appended candidates | 21 |
+| Candidate snippets this run | 213 |
+| Newly appended candidates | 23 |
 
 ## Best Review Targets
 
@@ -93,26 +93,26 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity Skip to main content Learn about arXiv becoming an independent nonprofit. We gratefully acknowledge support from the Simons Foundation, member institutions , and all contributors. Donate > cs > arXiv:2604.14148 Help | Advanced Search All fields Title Author Abstract Comments Journal reference AC
 ```
 
-### 7. YouMind-OpenLab/awesome-seedance-2-prompts
+### 7. HuyLe82US/awesome-seedance-prompts
 
 - Score: `13`
-- Trust: `discovery`
-- Source: https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- Candidate ID: `fe88c0190d12d7dd`
+- Trust: `community-collection`
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
+- Candidate ID: `23c3bed44b395d61`
 
 ```text
-YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
+HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
 ```
 
-### 8. saber007104/awesome-seedance-prompts
+### 8. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
 
 - Score: `13`
-- Trust: `discovery`
-- Source: https://github.com/saber007104/awesome-seedance-prompts
-- Candidate ID: `fa2bcb1831ab947f`
+- Trust: `community-collection`
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+- Candidate ID: `7533a0c8ccdfa2d6`
 
 ```text
-saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with proven results, clear sources, and ready-to-use templates for faster content generation. ['ai', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'prompts', 'prompts-template', 'seedance', 'seedance-api', 'seedance2', 'text-to-video', 'video', '
+【Style】 Hyper-realistic cinematic CG, realistic pet documentary feel, warm and healing style, realistic fur physics simulation, clear details, 8K quality, soft warm color tone, nighttime indoor atmosphere. 【Duration】 15 seconds 【Scene Setting】 A realistic and cozy bedroom, door closed, nighttime environment, main light off, only the bedside lamp emits a warm yellow glow, the room is generally dark. There is a blanket on the bed, and two pets are peeking out. 🎞 Storyboard Design (including shot size + depth of field + lighting logic) 0–3 seconds 【Shot Size】 Medium Shot 【Camera Movement】 Slightly slow zoom in 【Depth of Field】 Shallow depth of field, blurred background 【Visuals】 A chubby orang...
 ```
 
 ## Source Health
