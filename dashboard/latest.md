@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-06-06`
+Latest run: `2026-06-07`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,22 +8,22 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-06-06_sources.jsonl](../data/2026-06-06_sources.jsonl)
+- Raw source log: [data/2026-06-07_sources.jsonl](../data/2026-06-07_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
 
 | Metric | Count |
 |---|---:|
-| Sources/items scanned | 131 |
-| OK | 84 |
-| Filtered out | 28 |
+| Sources/items scanned | 147 |
+| OK | 108 |
+| Filtered out | 32 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
-| Other errors | 12 |
-| Candidate snippets this run | 198 |
-| Newly appended candidates | 24 |
+| Other errors | 0 |
+| Candidate snippets this run | 221 |
+| Newly appended candidates | 25 |
 
 ## Best Review Targets
 
@@ -124,9 +124,9 @@ saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with p
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 7 | 5 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 6 | 6 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
-| `huggingface_seedance_hub_search` | huggingface_search | 0 | 0 | 0 | 0 | 0 | 12 |
+| `huggingface_seedance_hub_search` | huggingface_search | 25 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `martiniart_awesome_seedance_2_prompt` | github_repo | 2 | 0 | 0 | 0 | 0 | 0 |
 | `reddit_seedance_search_candidate` | web | 0 | 0 | 0 | 1 | 0 | 0 |
@@ -143,19 +143,13 @@ saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with p
 
 | Source | Reason | URL / target |
 |---|---|---|
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/models?search=seedance&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/datasets?search=seedance&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/spaces?search=seedance&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/models?search=seedance+prompt&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/datasets?search=seedance+prompt&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/spaces?search=seedance+prompt&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/models?search=video+prompt+generation&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/datasets?search=video+prompt+generation&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/spaces?search=video+prompt+generation&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/models?search=image+to+video+prompt&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/datasets?search=image+to+video+prompt&limit=8&full=true |
-| `huggingface_seedance_hub_search` | HTTP Error 429: Too Many Requests | https://huggingface.co/api/spaces?search=image+to+video+prompt&limit=8&full=true |
-| ... | 7 more skipped/error rows in the raw source log |  |
+| `arxiv_video_generation_prompt_search` | Disabled by default after local smoke saw timeout/429 and low prompt-pack value. Enable for technical paper research only; obey arXiv polit... |  |
+| `brave_web_seedance_prompt_search` | Set GitHub Actions secret BRAVE_SEARCH_API_KEY to enable this source. | brave_web_seedance_prompt_search |
+| `tavily_web_seedance_prompt_search` | Set GitHub Actions secret TAVILY_API_KEY to enable this source. | tavily_web_seedance_prompt_search |
+| `exa_web_seedance_prompt_search` | Set GitHub Actions secret EXA_API_KEY to enable this source. | exa_web_seedance_prompt_search |
+| `serpapi_google_seedance_prompt_search` | Set GitHub Actions secret SERPAPI_API_KEY to enable this source. | serpapi_google_seedance_prompt_search |
+| `youtube_seedance_prompt_video_search` | Set GitHub Actions secret YOUTUBE_API_KEY to enable this source. | youtube_seedance_prompt_video_search |
+| `reddit_seedance_search_candidate` | Disabled by default. Use official APIs/allowed access only; do not bypass rate limits or anti-bot controls. | https://www.reddit.com/search/?q=Seedance%202%20prompt |
 
 ## Promotion Path
 
