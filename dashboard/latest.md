@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-06-14`
+Latest run: `2026-06-15`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-06-14_sources.jsonl](../data/2026-06-14_sources.jsonl)
+- Raw source log: [data/2026-06-15_sources.jsonl](../data/2026-06-15_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 147 |
-| OK | 108 |
-| Filtered out | 32 |
+| OK | 106 |
+| Filtered out | 34 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 0 |
-| Candidate snippets this run | 221 |
-| Newly appended candidates | 22 |
+| Candidate snippets this run | 217 |
+| Newly appended candidates | 20 |
 
 ## Best Review Targets
 
@@ -104,15 +104,15 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 saber007104/awesome-seedance-prompts Explore curated Seedance 2.0 prompts with proven results, clear sources, and ready-to-use templates for faster content generation. ['ai', 'ai-video', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-engineering', 'prompts', 'prompts-template', 'seedance', 'seedance-api', 'seedance2', 'text-to-video', 'video', '
 ```
 
-### 8. YouMind-OpenLab/awesome-seedance-2-prompts
+### 8. HuyLe82US/awesome-seedance-prompts
 
 - Score: `13`
-- Trust: `discovery`
-- Source: https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- Candidate ID: `fe88c0190d12d7dd`
+- Trust: `community-collection`
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
+- Candidate ID: `23c3bed44b395d61`
 
 ```text
-YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
+HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
 ```
 
 ## Source Health
@@ -124,7 +124,7 @@ YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 6 | 6 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 25 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
