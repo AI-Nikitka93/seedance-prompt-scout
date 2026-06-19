@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-06-18`
+Latest run: `2026-06-19`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,22 +8,22 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-06-18_sources.jsonl](../data/2026-06-18_sources.jsonl)
+- Raw source log: [data/2026-06-19_sources.jsonl](../data/2026-06-19_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
 
 | Metric | Count |
 |---|---:|
-| Sources/items scanned | 147 |
-| OK | 106 |
-| Filtered out | 34 |
+| Sources/items scanned | 115 |
+| OK | 72 |
+| Filtered out | 35 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
-| Other errors | 0 |
-| Candidate snippets this run | 217 |
-| Newly appended candidates | 18 |
+| Other errors | 1 |
+| Candidate snippets this run | 150 |
+| Newly appended candidates | 17 |
 
 ## Best Review Targets
 
@@ -71,18 +71,7 @@ https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https:/
 Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid text, captions, watermarks, logos. Stress camera movement: smooth parallax, consistent objects, stable faces; no text
 ```
 
-### 5. saber007104/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
-
-- Score: `15`
-- Trust: `community-collection-prompt-files`
-- Source: https://github.com/saber007104/awesome-seedance-prompts/blob/main/prompts/01-cinematic-vfx/10s-boxing-practice-template.md
-- Candidate ID: `55bf6eeae148b567`
-
-```text
-# 10s Boxing Practice Template *Gritty gym sparring - handheld circling, sweat impacts, stable identity.* https://github.com/user-attachments/assets/6a78ecc4-9630-4373-a564-64b56fb27377 **Source:** [AIVideoDotCom](https://x.com/AIVideoDotCom) - [Post](https://x.com/AIVideoDotCom/status/2021708002286501951) · _Created: February 11_ **Prompt:** ```text Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid tex...
-```
-
-### 6. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
+### 5. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
 
 - Score: `14`
 - Trust: `primary-paper`
@@ -93,7 +82,7 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity Skip to main content Learn about arXiv becoming an independent nonprofit. We gratefully acknowledge support from the Simons Foundation, member institutions , and all contributors. Donate > cs > arXiv:2604.14148 Help | Advanced Search All fields Title Author Abstract Comments Journal reference AC
 ```
 
-### 7. YouMind-OpenLab/awesome-seedance-2-prompts
+### 6. YouMind-OpenLab/awesome-seedance-2-prompts
 
 - Score: `13`
 - Trust: `discovery`
@@ -104,7 +93,7 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
 ```
 
-### 8. HuyLe82US/awesome-seedance-prompts
+### 7. HuyLe82US/awesome-seedance-prompts
 
 - Score: `13`
 - Trust: `community-collection`
@@ -113,6 +102,17 @@ YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video
 
 ```text
 HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
+```
+
+### 8. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+
+- Score: `13`
+- Trust: `community-collection`
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+- Candidate ID: `7533a0c8ccdfa2d6`
+
+```text
+【Style】 Hyper-realistic cinematic CG, realistic pet documentary feel, warm and healing style, realistic fur physics simulation, clear details, 8K quality, soft warm color tone, nighttime indoor atmosphere. 【Duration】 15 seconds 【Scene Setting】 A realistic and cozy bedroom, door closed, nighttime environment, main light off, only the bedside lamp emits a warm yellow glow, the room is generally dark. There is a blanket on the bed, and two pets are peeking out. 🎞 Storyboard Design (including shot size + depth of field + lighting logic) 0–3 seconds 【Shot Size】 Medium Shot 【Camera Movement】 Slightly slow zoom in 【Depth of Field】 Shallow depth of field, blurred background 【Visuals】 A chubby orang...
 ```
 
 ## Source Health
@@ -124,14 +124,14 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 3 | 9 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 25 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `martiniart_awesome_seedance_2_prompt` | github_repo | 2 | 0 | 0 | 0 | 0 | 0 |
 | `reddit_seedance_search_candidate` | web | 0 | 0 | 0 | 1 | 0 | 0 |
 | `rich5000_seedance_prompt_guide` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `saber_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
+| `saber_awesome_seedance_prompts` | github_repo | 0 | 0 | 0 | 0 | 0 | 1 |
 | `seedance_2_arxiv_report` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `serpapi_google_seedance_prompt_search` | serpapi_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `stackexchange_ai_video_prompt_search` | stackexchange_search | 4 | 11 | 0 | 0 | 0 | 0 |
@@ -143,6 +143,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 
 | Source | Reason | URL / target |
 |---|---|---|
+| `saber_awesome_seedance_prompts` | HTTP Error 404: Not Found | https://github.com/saber007104/awesome-seedance-prompts |
 | `arxiv_video_generation_prompt_search` | Disabled by default after local smoke saw timeout/429 and low prompt-pack value. Enable for technical paper research only; obey arXiv polit... |  |
 | `brave_web_seedance_prompt_search` | Set GitHub Actions secret BRAVE_SEARCH_API_KEY to enable this source. | brave_web_seedance_prompt_search |
 | `tavily_web_seedance_prompt_search` | Set GitHub Actions secret TAVILY_API_KEY to enable this source. | tavily_web_seedance_prompt_search |
