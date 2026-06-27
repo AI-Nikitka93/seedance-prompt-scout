@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-06-26`
+Latest run: `2026-06-27`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-06-26_sources.jsonl](../data/2026-06-26_sources.jsonl)
+- Raw source log: [data/2026-06-27_sources.jsonl](../data/2026-06-27_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -22,7 +22,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 154 |
+| Candidate snippets this run | 153 |
 | Newly appended candidates | 19 |
 
 ## Best Review Targets
@@ -60,18 +60,7 @@ The following was generated using the prompts from version 1. Video generation: 
 https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org) [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020+-yellow.svg)](https://nodejs.org) [![fal.ai](https://img.shields.io/badge/Platform-fal.ai-purple.svg)](https://fal.ai) The official API for **Seedance 2.0** - ByteDance's most advanced video generation model. Cinematic-quality output with native audio, real-world physics, and director-level camera control. Available now on [fal.ai](https://fal.ai). > **[Get Started](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)** - Try Seedance 2.0 directly on fal.ai. ## What is Seedance 2....
 ```
 
-### 4. snoopyrain/vpick-seedance-director
-
-- Score: `15`
-- Trust: `discovery`
-- Source: https://github.com/snoopyrain/vpick-seedance-director
-- Candidate ID: `96a23195cbcfbac7`
-
-```text
-snoopyrain/vpick-seedance-director VPick × Higgsfield Seedance Shotlist Director — 5-stage short-drama pipeline that writes director-grade Seedance 2 prompts (STYLE PREFIX → Characters → Scene → CUT, 8K photoreal, no fixed per-cut seconds) inside the VPick MCP connector. Ships as a Claude Code skill + a claude.ai Project bundle. 2026-06-26T05:55:30Z https://github.com/snoo
-```
-
-### 5. HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+### 4. HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
 
 - Score: `15`
 - Trust: `community-collection`
@@ -82,7 +71,7 @@ snoopyrain/vpick-seedance-director VPick × Higgsfield Seedance Shotlist Directo
 Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid text, captions, watermarks, logos. Stress camera movement: smooth parallax, consistent objects, stable faces; no text
 ```
 
-### 6. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
+### 5. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
 
 - Score: `14`
 - Trust: `primary-paper`
@@ -93,7 +82,7 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity Skip to main content Learn about arXiv becoming an independent nonprofit. We gratefully acknowledge support from the Simons Foundation, member institutions , and all contributors. Donate > cs > arXiv:2604.14148 Help | Advanced Search All fields Title Author Abstract Comments Journal reference AC
 ```
 
-### 7. YouMind-OpenLab/awesome-seedance-2-prompts
+### 6. YouMind-OpenLab/awesome-seedance-2-prompts
 
 - Score: `13`
 - Trust: `discovery`
@@ -104,7 +93,7 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
 ```
 
-### 8. HuyLe82US/awesome-seedance-prompts
+### 7. HuyLe82US/awesome-seedance-prompts
 
 - Score: `13`
 - Trust: `community-collection`
@@ -113,6 +102,17 @@ YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video
 
 ```text
 HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
+```
+
+### 8. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+
+- Score: `13`
+- Trust: `community-collection`
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+- Candidate ID: `7533a0c8ccdfa2d6`
+
+```text
+【Style】 Hyper-realistic cinematic CG, realistic pet documentary feel, warm and healing style, realistic fur physics simulation, clear details, 8K quality, soft warm color tone, nighttime indoor atmosphere. 【Duration】 15 seconds 【Scene Setting】 A realistic and cozy bedroom, door closed, nighttime environment, main light off, only the bedside lamp emits a warm yellow glow, the room is generally dark. There is a blanket on the bed, and two pets are peeking out. 🎞 Storyboard Design (including shot size + depth of field + lighting logic) 0–3 seconds 【Shot Size】 Medium Shot 【Camera Movement】 Slightly slow zoom in 【Depth of Field】 Shallow depth of field, blurred background 【Visuals】 A chubby orang...
 ```
 
 ## Source Health
