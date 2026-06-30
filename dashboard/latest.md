@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-06-29`
+Latest run: `2026-06-30`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-06-29_sources.jsonl](../data/2026-06-29_sources.jsonl)
+- Raw source log: [data/2026-06-30_sources.jsonl](../data/2026-06-30_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 115 |
-| OK | 73 |
-| Filtered out | 34 |
+| OK | 75 |
+| Filtered out | 32 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 151 |
-| Newly appended candidates | 18 |
+| Candidate snippets this run | 154 |
+| Newly appended candidates | 20 |
 
 ## Best Review Targets
 
@@ -76,10 +76,10 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 - Score: `14`
 - Trust: `primary-paper`
 - Source: https://arxiv.org/abs/2604.14148
-- Candidate ID: `bf8714d76b385db9`
+- Candidate ID: `3d67c1e874e960c1`
 
 ```text
-[2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity Skip to main content Learn about arXiv becoming an independent nonprofit. We gratefully acknowledge support from the Simons Foundation, member institutions , and all contributors. Donate > cs > arXiv:2604.14148 Help | Advanced Search All fields Title Author Abstract Comments Journal reference AC
+vanced Search All fields Title Author Abstract Comments Journal reference ACM classification MSC classification Report number arXiv identifier DOI ORCID arXiv author ID Help pages Full text Search GO quick links Login Help Pages About Computer Science > Computer Vision and Pattern Recognition arXiv:2604.14148 (cs) [Submitted on 15 Apr 2026] Title: Seedance 2.0: Advancing Video Generation for World Complexity Authors: Team Seedance , De Chen , Liyang Chen , Xin Chen , Ying Chen , Zhuo Chen , Zhuowei Chen , Feng Cheng , Tianheng Cheng , Yufeng Cheng , Mojie Chi , Xuyan Chi , Jian Cong , Qinpeng Cui , Fei Ding , Qide Dong , Yujiao Du , Haojie Duanmu , Junliang Fan , Jiarui Fang , Jing Fang , Z...
 ```
 
 ### 6. YouMind-OpenLab/awesome-seedance-2-prompts
@@ -124,7 +124,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 6 | 6 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 25 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
