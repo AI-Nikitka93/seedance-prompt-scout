@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-07-19`
+Latest run: `2026-07-20`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-07-19_sources.jsonl](../data/2026-07-19_sources.jsonl)
+- Raw source log: [data/2026-07-20_sources.jsonl](../data/2026-07-20_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -22,7 +22,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 156 |
+| Candidate snippets this run | 154 |
 | Newly appended candidates | 21 |
 
 ## Best Review Targets
@@ -38,18 +38,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 modal audio-video joint generation architecture that supports text, image, audio, and video inputs, leading to the most comprehensive multimodal content reference and editing capabilities in the industry. Tech Blog Try Now Get API Compare Now Immersive Audio-visual Experience Featuring exceptional motion stability and audio-video joint generation, Seedance 2.0 delivers an ultra-realistic immersive experience. Create with Director-level Control Supporting images, audios and videos as references, Seedance 2.0 enables creators to transform an idea into visuals with full control over performance, lighting, shadow, and camera movement. Empower Creativity Seedance 2.0 delivers cinematic output al...
 ```
 
-### 2. akirakai/awesome-seedance-prompts
-
-- Score: `17`
-- Trust: `discovery`
-- Source: https://github.com/akirakai/awesome-seedance-prompts
-- Candidate ID: `b808b4817b550509`
-
-```text
-akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-07-19T06:57:52Z https://github.co
-```
-
-### 3. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+### 2. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
 
 - Score: `17`
 - Trust: `community-collection`
@@ -60,7 +49,7 @@ akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance 
 The following was generated using the prompts from version 1. Video generation: 10-second music video with beat syncing. 10 seconds, music video with beat syncing, 16:9 or 9:16. Here are 3 different style versions: Version 1: K-pop girl group - fast cut beat syncing (high-energy stage) Seedance 2.0 Prompts: 10-second K-pop girl group MV beat syncing footage, 2.35:1 widescreen, 24fps, 8 fast cut shots. 0-1 second: Low-angle shot, four girl group members standing in a triangular formation on the stage floor, lights flashing with the beat, the stage "seems to vibrate," all members simultaneously inhale in preparation; 2-3 seconds: Close-up of the lead vocalist in the center, breath and eyes gr...
 ```
 
-### 4. fal-ai/seedance-2.0-api
+### 3. fal-ai/seedance-2.0-api
 
 - Score: `15`
 - Trust: `api-reference`
@@ -71,7 +60,7 @@ The following was generated using the prompts from version 1. Video generation: 
 https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org) [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020+-yellow.svg)](https://nodejs.org) [![fal.ai](https://img.shields.io/badge/Platform-fal.ai-purple.svg)](https://fal.ai) The official API for **Seedance 2.0** - ByteDance's most advanced video generation model. Cinematic-quality output with native audio, real-world physics, and director-level camera control. Available now on [fal.ai](https://fal.ai). > **[Get Started](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)** - Try Seedance 2.0 directly on fal.ai. ## What is Seedance 2....
 ```
 
-### 5. HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+### 4. HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
 
 - Score: `15`
 - Trust: `community-collection`
@@ -82,7 +71,7 @@ https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https:/
 Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid text, captions, watermarks, logos. Stress camera movement: smooth parallax, consistent objects, stable faces; no text
 ```
 
-### 6. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
+### 5. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
 
 - Score: `14`
 - Trust: `primary-paper`
@@ -93,7 +82,7 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 et al. (71 additional authors not shown) View a PDF of the paper titled Seedance 2.0: Advancing Video Generation for World Complexity, by Team Seedance and 170 other authors View PDF Abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopts a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This allows it to support four input modalities: text, image, audio, and video, by integrating one of the most comprehensive suites of multi-modal content reference and editing capabilities available...
 ```
 
-### 7. YouMind-OpenLab/awesome-seedance-2-prompts
+### 6. YouMind-OpenLab/awesome-seedance-2-prompts
 
 - Score: `13`
 - Trust: `discovery`
@@ -104,7 +93,7 @@ et al. (71 additional authors not shown) View a PDF of the paper titled Seedance
 YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
 ```
 
-### 8. HuyLe82US/awesome-seedance-prompts
+### 7. HuyLe82US/awesome-seedance-prompts
 
 - Score: `13`
 - Trust: `community-collection`
@@ -113,6 +102,17 @@ YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video
 
 ```text
 HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
+```
+
+### 8. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+
+- Score: `13`
+- Trust: `community-collection`
+- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+- Candidate ID: `7533a0c8ccdfa2d6`
+
+```text
+【Style】 Hyper-realistic cinematic CG, realistic pet documentary feel, warm and healing style, realistic fur physics simulation, clear details, 8K quality, soft warm color tone, nighttime indoor atmosphere. 【Duration】 15 seconds 【Scene Setting】 A realistic and cozy bedroom, door closed, nighttime environment, main light off, only the bedside lamp emits a warm yellow glow, the room is generally dark. There is a blanket on the bed, and two pets are peeking out. 🎞 Storyboard Design (including shot size + depth of field + lighting logic) 0–3 seconds 【Shot Size】 Medium Shot 【Camera Movement】 Slightly slow zoom in 【Depth of Field】 Shallow depth of field, blurred background 【Visuals】 A chubby orang...
 ```
 
 ## Source Health
