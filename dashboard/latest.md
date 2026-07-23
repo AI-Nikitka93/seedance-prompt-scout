@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-07-22`
+Latest run: `2026-07-23`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-07-22_sources.jsonl](../data/2026-07-22_sources.jsonl)
+- Raw source log: [data/2026-07-23_sources.jsonl](../data/2026-07-23_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 115 |
-| OK | 74 |
-| Filtered out | 33 |
+| OK | 78 |
+| Filtered out | 29 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 152 |
-| Newly appended candidates | 19 |
+| Candidate snippets this run | 160 |
+| Newly appended candidates | 27 |
 
 ## Best Review Targets
 
@@ -38,7 +38,18 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 modal audio-video joint generation architecture that supports text, image, audio, and video inputs, leading to the most comprehensive multimodal content reference and editing capabilities in the industry. Tech Blog Try Now Get API Compare Now Immersive Audio-visual Experience Featuring exceptional motion stability and audio-video joint generation, Seedance 2.0 delivers an ultra-realistic immersive experience. Create with Director-level Control Supporting images, audios and videos as references, Seedance 2.0 enables creators to transform an idea into visuals with full control over performance, lighting, shadow, and camera movement. Empower Creativity Seedance 2.0 delivers cinematic output al...
 ```
 
-### 2. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
+### 2. afloy011-spec/seedance-shotlist-director-en
+
+- Score: `17`
+- Trust: `discovery`
+- Source: https://github.com/afloy011-spec/seedance-shotlist-director-en
+- Candidate ID: `cce78e3bb61657e2`
+
+```text
+afloy011-spec/seedance-shotlist-director-en Claude skill: turn a script into a director's shotlist for Seedance 2.0 — an editable HTML production board with copy-ready prompts (English edition) HTML ['ai-video', 'claude-code', 'claude-skill', 'higgsfield', 'prompt-engineering', 'seedance', 'video-generation'] 2026-07-23T07:22:23Z https://github.com/afloy011-spec/seedanc
+```
+
+### 3. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
 
 - Score: `17`
 - Trust: `community-collection`
@@ -49,7 +60,7 @@ modal audio-video joint generation architecture that supports text, image, audio
 The following was generated using the prompts from version 1. Video generation: 10-second music video with beat syncing. 10 seconds, music video with beat syncing, 16:9 or 9:16. Here are 3 different style versions: Version 1: K-pop girl group - fast cut beat syncing (high-energy stage) Seedance 2.0 Prompts: 10-second K-pop girl group MV beat syncing footage, 2.35:1 widescreen, 24fps, 8 fast cut shots. 0-1 second: Low-angle shot, four girl group members standing in a triangular formation on the stage floor, lights flashing with the beat, the stage "seems to vibrate," all members simultaneously inhale in preparation; 2-3 seconds: Close-up of the lead vocalist in the center, breath and eyes gr...
 ```
 
-### 3. fal-ai/seedance-2.0-api
+### 4. fal-ai/seedance-2.0-api
 
 - Score: `15`
 - Trust: `api-reference`
@@ -60,7 +71,18 @@ The following was generated using the prompts from version 1. Video generation: 
 https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org) [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020+-yellow.svg)](https://nodejs.org) [![fal.ai](https://img.shields.io/badge/Platform-fal.ai-purple.svg)](https://fal.ai) The official API for **Seedance 2.0** - ByteDance's most advanced video generation model. Cinematic-quality output with native audio, real-world physics, and director-level camera control. Available now on [fal.ai](https://fal.ai). > **[Get Started](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)** - Try Seedance 2.0 directly on fal.ai. ## What is Seedance 2....
 ```
 
-### 4. HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
+### 5. Aboudoc/nivas-ad
+
+- Score: `15`
+- Trust: `discovery`
+- Source: https://github.com/Aboudoc/nivas-ad
+- Candidate ID: `c8d35ed77add08e9`
+
+```text
+Aboudoc/nivas-ad AI video prompt library for the Nivas brand — website hero loops, Thai-agent social spots (Nivas Companion), and modular luxury films by target nationality (Nivas Global). Higgsfield: Seedance 2.0 by default, Kling 3.0 for dialogue shots. ['advertising', 'ai-video', 'higgsfield', 'prompt-library', 'real-estate'] 2026-07-23T07:29:07Z https://github.com/Aboudoc/niv
+```
+
+### 6. HuyLe82US/awesome-seedance-prompts:prompts/01-cinematic-vfx/10s-boxing-practice-template.md
 
 - Score: `15`
 - Trust: `community-collection`
@@ -71,7 +93,7 @@ https://github.com/fal-ai/seedance-2.0-api # Seedance 2.0 API [![Python](https:/
 Handheld shot circling two boxers practice sparring in a gritty gym, purposefully missing each other with their swings. Sweat droplets, sharp impacts, breathing intensity. Shallow depth of field, practical lighting, visceral realism, stable identity. Duration: 10s. Aspect ratio: 16:9. Photoreal cinematic. Single shot unless specified. Avoid text, captions, watermarks, logos. Stress camera movement: smooth parallax, consistent objects, stable faces; no text
 ```
 
-### 5. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
+### 7. [2604.14148] Seedance 2.0: Advancing Video Generation for World Complexity
 
 - Score: `14`
 - Trust: `primary-paper`
@@ -82,37 +104,15 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 et al. (71 additional authors not shown) View a PDF of the paper titled Seedance 2.0: Advancing Video Generation for World Complexity, by Team Seedance and 170 other authors View PDF Abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopts a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This allows it to support four input modalities: text, image, audio, and video, by integrating one of the most comprehensive suites of multi-modal content reference and editing capabilities available...
 ```
 
-### 6. YouMind-OpenLab/awesome-seedance-2-prompts
+### 8. AtlasCloudAI/awesome-seedance-2.5-prompts-skills
 
 - Score: `13`
 - Trust: `discovery`
-- Source: https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
-- Candidate ID: `fe88c0190d12d7dd`
+- Source: https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills
+- Candidate ID: `d8c73c5a8257c4ba`
 
 ```text
-YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
-```
-
-### 7. HuyLe82US/awesome-seedance-prompts
-
-- Score: `13`
-- Trust: `community-collection`
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
-- Candidate ID: `23c3bed44b395d61`
-
-```text
-HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
-```
-
-### 8. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
-
-- Score: `13`
-- Trust: `community-collection`
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts/blob/main/prompts/05-anime-manga/cozy-nighttime-pet-secret.md
-- Candidate ID: `7533a0c8ccdfa2d6`
-
-```text
-【Style】 Hyper-realistic cinematic CG, realistic pet documentary feel, warm and healing style, realistic fur physics simulation, clear details, 8K quality, soft warm color tone, nighttime indoor atmosphere. 【Duration】 15 seconds 【Scene Setting】 A realistic and cozy bedroom, door closed, nighttime environment, main light off, only the bedside lamp emits a warm yellow glow, the room is generally dark. There is a blanket on the bed, and two pets are peeking out. 🎞 Storyboard Design (including shot size + depth of field + lighting logic) 0–3 seconds 【Shot Size】 Medium Shot 【Camera Movement】 Slightly slow zoom in 【Depth of Field】 Shallow depth of field, blurred background 【Visuals】 A chubby orang...
+AtlasCloudAI/awesome-seedance-2.5-prompts-skills Curated Seedance 2.5 video prompts (100+ full 30s storyboards, 20 languages) + an installable Agent Skill for controllable storyboard/reference-driven video. Real previews via Atlas Cloud. TypeScript ['ai-video', 'atlas-cloud', 'awesome-list', 'claude-code', 'claude-skill', 'image-to-video', 'prompt-engineering', 'prompts', 'see
 ```
 
 ## Source Health
@@ -124,7 +124,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 9 | 3 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 25 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
