@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-08-06`
+Latest run: `2026-08-07`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-08-06_sources.jsonl](../data/2026-08-06_sources.jsonl)
+- Raw source log: [data/2026-08-07_sources.jsonl](../data/2026-08-07_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -22,8 +22,8 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 156 |
-| Newly appended candidates | 23 |
+| Candidate snippets this run | 158 |
+| Newly appended candidates | 24 |
 
 ## Best Review Targets
 
