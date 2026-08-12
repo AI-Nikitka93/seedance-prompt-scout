@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-08-11`
+Latest run: `2026-08-12`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,22 +8,22 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-08-11_sources.jsonl](../data/2026-08-11_sources.jsonl)
+- Raw source log: [data/2026-08-12_sources.jsonl](../data/2026-08-12_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
 
 | Metric | Count |
 |---|---:|
-| Sources/items scanned | 117 |
-| OK | 77 |
-| Filtered out | 32 |
+| Sources/items scanned | 118 |
+| OK | 75 |
+| Filtered out | 35 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 157 |
-| Newly appended candidates | 18 |
+| Candidate snippets this run | 153 |
+| Newly appended candidates | 16 |
 
 ## Best Review Targets
 
@@ -124,9 +124,9 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 6 | 6 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 3 | 9 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
-| `huggingface_seedance_hub_search` | huggingface_search | 27 | 3 | 0 | 0 | 0 | 0 |
+| `huggingface_seedance_hub_search` | huggingface_search | 28 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `martiniart_awesome_seedance_2_prompt` | github_repo | 2 | 0 | 0 | 0 | 0 | 0 |
 | `reddit_seedance_search_candidate` | web | 0 | 0 | 0 | 1 | 0 | 0 |
