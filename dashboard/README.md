@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-08-13`
+Latest run: `2026-08-14`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-08-13_sources.jsonl](../data/2026-08-13_sources.jsonl)
+- Raw source log: [data/2026-08-14_sources.jsonl](../data/2026-08-14_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 118 |
-| OK | 80 |
-| Filtered out | 30 |
+| OK | 79 |
+| Filtered out | 31 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 160 |
-| Newly appended candidates | 24 |
+| Candidate snippets this run | 158 |
+| Newly appended candidates | 25 |
 
 ## Best Review Targets
 
@@ -43,10 +43,10 @@ modal audio-video joint generation architecture that supports text, image, audio
 - Score: `17`
 - Trust: `discovery`
 - Source: https://github.com/akirakai/awesome-seedance-prompts
-- Candidate ID: `b0426de7b37fd6c1`
+- Candidate ID: `78c09ac6423ef51f`
 
 ```text
-akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-08-13T05:54:00Z https://github.co
+akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-08-14T05:51:58Z https://github.co
 ```
 
 ### 3. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
@@ -124,7 +124,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 8 | 4 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 7 | 5 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 28 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
