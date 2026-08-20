@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-08-19`
+Latest run: `2026-08-20`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,22 +8,22 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-08-19_sources.jsonl](../data/2026-08-19_sources.jsonl)
+- Raw source log: [data/2026-08-20_sources.jsonl](../data/2026-08-20_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
 
 | Metric | Count |
 |---|---:|
-| Sources/items scanned | 119 |
-| OK | 79 |
-| Filtered out | 31 |
+| Sources/items scanned | 124 |
+| OK | 80 |
+| Filtered out | 33 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
-| Risk-flagged | 1 |
+| Risk-flagged | 3 |
 | Other errors | 1 |
 | Candidate snippets this run | 151 |
-| Newly appended candidates | 18 |
+| Newly appended candidates | 17 |
 
 ## Best Review Targets
 
@@ -82,7 +82,18 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 et al. (71 additional authors not shown) View a PDF of the paper titled Seedance 2.0: Advancing Video Generation for World Complexity, by Team Seedance and 170 other authors View PDF Abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopts a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This allows it to support four input modalities: text, image, audio, and video, by integrating one of the most comprehensive suites of multi-modal content reference and editing capabilities available...
 ```
 
-### 6. HuyLe82US/awesome-seedance-prompts
+### 6. YouMind-OpenLab/awesome-seedance-2-prompts
+
+- Score: `13`
+- Trust: `discovery`
+- Source: https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts
+- Candidate ID: `fe88c0190d12d7dd`
+
+```text
+YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
+```
+
+### 7. HuyLe82US/awesome-seedance-prompts
 
 - Score: `13`
 - Trust: `community-collection`
@@ -93,7 +104,7 @@ et al. (71 additional authors not shown) View a PDF of the paper titled Seedance
 HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
 ```
 
-### 7. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
+### 8. HuyLe82US/awesome-seedance-prompts:prompts/05-anime-manga/cozy-nighttime-pet-secret.md
 
 - Score: `13`
 - Trust: `community-collection`
@@ -102,17 +113,6 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 
 ```text
 【Style】 Hyper-realistic cinematic CG, realistic pet documentary feel, warm and healing style, realistic fur physics simulation, clear details, 8K quality, soft warm color tone, nighttime indoor atmosphere. 【Duration】 15 seconds 【Scene Setting】 A realistic and cozy bedroom, door closed, nighttime environment, main light off, only the bedside lamp emits a warm yellow glow, the room is generally dark. There is a blanket on the bed, and two pets are peeking out. 🎞 Storyboard Design (including shot size + depth of field + lighting logic) 0–3 seconds 【Shot Size】 Medium Shot 【Camera Movement】 Slightly slow zoom in 【Depth of Field】 Shallow depth of field, blurred background 【Visuals】 A chubby orang...
-```
-
-### 8. MartiniArt/awesome-seedance-2-prompt:prompts/commercial-use-cases.md
-
-- Score: `13`
-- Trust: `community-collection-prompt-files`
-- Source: https://github.com/astorie-ai/awesome-seedance-2-prompt/blob/main/prompts/commercial-use-cases.md
-- Candidate ID: `97453c071e9d21b9`
-
-```text
-Copy & paste this prompt 👇 Style: Gritty Cine Verité, real footage, 35mm handheld lens with subtle natural shake. Camera: Single continuous 3rd-person POV tracking shot (no cuts). Lighting: Harsh, high-contrast Mediterranean noon sunlight; dramatic volumetric haze over the city. Audio: Immersive spatial sound; heavy wind howling, fabric of the carpet flapping violently at high speeds, distant missile whizzes and muffled explosions. [IMAGE REFERENCES / LEGEND]: The main character and setting. Maintain the exact man in blue swim trunks, his physical build, and the ornate flying carpet as seen in the starting frame. [TIMELINE SECOND BY SECOND] 0-3s: [Wide Shot] man takes a heavy leap from the...
 ```
 
 ## Source Health
@@ -124,9 +124,9 @@ Copy & paste this prompt 👇 Style: Gritty Cine Verité, real footage, 35mm han
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 6 | 6 | 0 | 0 | 0 | 0 |
-| `github_seedance_prompt_search` | github_search | 1 | 11 | 0 | 0 | 0 | 0 |
-| `huggingface_seedance_hub_search` | huggingface_search | 29 | 3 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
+| `github_seedance_prompt_search` | github_search | 0 | 11 | 0 | 0 | 1 | 0 |
+| `huggingface_seedance_hub_search` | huggingface_search | 33 | 3 | 0 | 0 | 1 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `martiniart_awesome_seedance_2_prompt` | github_repo | 2 | 0 | 0 | 0 | 0 | 0 |
 | `reddit_seedance_search_candidate` | web | 0 | 0 | 0 | 1 | 0 | 0 |
