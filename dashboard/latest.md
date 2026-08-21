@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-08-20`
+Latest run: `2026-08-21`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,22 +8,22 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-08-20_sources.jsonl](../data/2026-08-20_sources.jsonl)
+- Raw source log: [data/2026-08-21_sources.jsonl](../data/2026-08-21_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
 
 | Metric | Count |
 |---|---:|
-| Sources/items scanned | 124 |
-| OK | 80 |
-| Filtered out | 33 |
+| Sources/items scanned | 126 |
+| OK | 82 |
+| Filtered out | 35 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
-| Risk-flagged | 3 |
+| Risk-flagged | 1 |
 | Other errors | 1 |
-| Candidate snippets this run | 151 |
-| Newly appended candidates | 17 |
+| Candidate snippets this run | 153 |
+| Newly appended candidates | 16 |
 
 ## Best Review Targets
 
@@ -124,9 +124,9 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 4 | 8 | 0 | 0 | 0 | 0 |
-| `github_seedance_prompt_search` | github_search | 0 | 11 | 0 | 0 | 1 | 0 |
-| `huggingface_seedance_hub_search` | huggingface_search | 33 | 3 | 0 | 0 | 1 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
+| `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
+| `huggingface_seedance_hub_search` | huggingface_search | 34 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `martiniart_awesome_seedance_2_prompt` | github_repo | 2 | 0 | 0 | 0 | 0 | 0 |
 | `reddit_seedance_search_candidate` | web | 0 | 0 | 0 | 1 | 0 | 0 |
@@ -134,7 +134,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `saber_awesome_seedance_prompts` | github_repo | 0 | 0 | 0 | 0 | 0 | 1 |
 | `seedance_2_arxiv_report` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `serpapi_google_seedance_prompt_search` | serpapi_search | 0 | 0 | 1 | 0 | 0 | 0 |
-| `stackexchange_ai_video_prompt_search` | stackexchange_search | 4 | 11 | 0 | 0 | 0 | 0 |
+| `stackexchange_ai_video_prompt_search` | stackexchange_search | 4 | 13 | 0 | 0 | 0 | 0 |
 | `tavily_web_seedance_prompt_search` | tavily_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `youmind_openlab_seedance_2_prompts` | github_repo | 0 | 0 | 0 | 0 | 1 | 0 |
 | `youtube_seedance_prompt_video_search` | youtube_search | 0 | 0 | 1 | 0 | 0 | 0 |
