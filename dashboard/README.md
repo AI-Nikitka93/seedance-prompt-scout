@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-08-31`
+Latest run: `2026-09-01`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-08-31_sources.jsonl](../data/2026-08-31_sources.jsonl)
+- Raw source log: [data/2026-09-01_sources.jsonl](../data/2026-09-01_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 126 |
-| OK | 85 |
-| Filtered out | 32 |
+| OK | 83 |
+| Filtered out | 35 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
-| Other errors | 2 |
-| Candidate snippets this run | 166 |
-| Newly appended candidates | 22 |
+| Other errors | 1 |
+| Candidate snippets this run | 162 |
+| Newly appended candidates | 18 |
 
 ## Best Review Targets
 
@@ -43,10 +43,10 @@ modal audio-video joint generation architecture that supports text, image, audio
 - Score: `17`
 - Trust: `discovery`
 - Source: https://github.com/akirakai/awesome-seedance-prompts
-- Candidate ID: `19517b69d8f6cedd`
+- Candidate ID: `66fe4ec6d6de6e68`
 
 ```text
-akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-08-31T10:59:54Z https://github.co
+akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-09-01T09:52:54Z https://github.co
 ```
 
 ### 3. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
@@ -104,15 +104,15 @@ et al. (71 additional authors not shown) View a PDF of the paper titled Seedance
 YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
 ```
 
-### 8. HuyLe82US/awesome-seedance-prompts
+### 8. flatkey-ai/awesome-seedance-prompts
 
 - Score: `13`
-- Trust: `community-collection`
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
-- Candidate ID: `23c3bed44b395d61`
+- Trust: `discovery`
+- Source: https://github.com/flatkey-ai/awesome-seedance-prompts
+- Candidate ID: `49ef44c57c5ad75e`
 
 ```text
-HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
+flatkey-ai/awesome-seedance-prompts Curated Seedance video prompts, shot patterns, and production-ready examples for Flatkey. JavaScript 2026-09-01T09:00:20Z https://github.com/flatkey-ai/awesome-seedance-prompts
 ```
 
 ## Source Health
@@ -124,7 +124,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 7 | 5 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 34 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
@@ -134,7 +134,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `saber_awesome_seedance_prompts` | github_repo | 0 | 0 | 0 | 0 | 0 | 1 |
 | `seedance_2_arxiv_report` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `serpapi_google_seedance_prompt_search` | serpapi_search | 0 | 0 | 1 | 0 | 0 | 0 |
-| `stackexchange_ai_video_prompt_search` | stackexchange_search | 4 | 12 | 0 | 0 | 0 | 1 |
+| `stackexchange_ai_video_prompt_search` | stackexchange_search | 4 | 13 | 0 | 0 | 0 | 0 |
 | `tavily_web_seedance_prompt_search` | tavily_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `youmind_openlab_seedance_2_prompts` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
 | `youtube_seedance_prompt_video_search` | youtube_search | 0 | 0 | 1 | 0 | 0 | 0 |
@@ -145,7 +145,6 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 |---|---|---|
 | `saber_awesome_seedance_prompts` | HTTP Error 404: Not Found | https://github.com/saber007104/awesome-seedance-prompts |
 | `arxiv_video_generation_prompt_search` | Disabled by default after local smoke saw timeout/429 and low prompt-pack value. Enable for technical paper research only; obey arXiv polit... |  |
-| `stackexchange_ai_video_prompt_search` | HTTP Error 400: Bad Request | https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=activity&q=image+to+video+prompt&site=webapps&pagesiz... |
 | `brave_web_seedance_prompt_search` | Set GitHub Actions secret BRAVE_SEARCH_API_KEY to enable this source. | brave_web_seedance_prompt_search |
 | `tavily_web_seedance_prompt_search` | Set GitHub Actions secret TAVILY_API_KEY to enable this source. | tavily_web_seedance_prompt_search |
 | `exa_web_seedance_prompt_search` | Set GitHub Actions secret EXA_API_KEY to enable this source. | exa_web_seedance_prompt_search |
