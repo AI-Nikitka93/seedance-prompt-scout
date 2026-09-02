@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-09-01`
+Latest run: `2026-09-02`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,22 +8,22 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-09-01_sources.jsonl](../data/2026-09-01_sources.jsonl)
+- Raw source log: [data/2026-09-02_sources.jsonl](../data/2026-09-02_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
 
 | Metric | Count |
 |---|---:|
-| Sources/items scanned | 126 |
-| OK | 83 |
-| Filtered out | 35 |
+| Sources/items scanned | 125 |
+| OK | 84 |
+| Filtered out | 33 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
-| Candidate snippets this run | 162 |
-| Newly appended candidates | 18 |
+| Candidate snippets this run | 163 |
+| Newly appended candidates | 22 |
 
 ## Best Review Targets
 
@@ -43,10 +43,10 @@ modal audio-video joint generation architecture that supports text, image, audio
 - Score: `17`
 - Trust: `discovery`
 - Source: https://github.com/akirakai/awesome-seedance-prompts
-- Candidate ID: `66fe4ec6d6de6e68`
+- Candidate ID: `4b5f4d81867c8931`
 
 ```text
-akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-09-01T09:52:54Z https://github.co
+akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-09-02T08:53:21Z https://github.co
 ```
 
 ### 3. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
@@ -109,10 +109,10 @@ YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video
 - Score: `13`
 - Trust: `discovery`
 - Source: https://github.com/flatkey-ai/awesome-seedance-prompts
-- Candidate ID: `49ef44c57c5ad75e`
+- Candidate ID: `fbae2c044fd4a78d`
 
 ```text
-flatkey-ai/awesome-seedance-prompts Curated Seedance video prompts, shot patterns, and production-ready examples for Flatkey. JavaScript 2026-09-01T09:00:20Z https://github.com/flatkey-ai/awesome-seedance-prompts
+flatkey-ai/awesome-seedance-prompts Curated Seedance video prompts, shot patterns, and production-ready examples for Flatkey. JavaScript 2026-09-02T08:34:59Z https://github.com/flatkey-ai/awesome-seedance-prompts
 ```
 
 ## Source Health
@@ -124,9 +124,9 @@ flatkey-ai/awesome-seedance-prompts Curated Seedance video prompts, shot pattern
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 5 | 7 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 7 | 5 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
-| `huggingface_seedance_hub_search` | huggingface_search | 34 | 3 | 0 | 0 | 0 | 0 |
+| `huggingface_seedance_hub_search` | huggingface_search | 33 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
 | `martiniart_awesome_seedance_2_prompt` | github_repo | 2 | 0 | 0 | 0 | 0 | 0 |
 | `reddit_seedance_search_candidate` | web | 0 | 0 | 0 | 1 | 0 | 0 |
