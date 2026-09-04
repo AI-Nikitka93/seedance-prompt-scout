@@ -1,6 +1,6 @@
 # Seedance Prompt Scout Dashboard
 
-Latest run: `2026-09-03`
+Latest run: `2026-09-04`
 
 This repo is an external inbox for Seedance prompt research. It collects candidates, snippets, links, and provenance. It does not approve best prompts automatically.
 
@@ -8,7 +8,7 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 
 - Latest report: [reports/LATEST_seedance_prompt_scout.md](../reports/LATEST_seedance_prompt_scout.md)
 - Latest review inbox: [prompts/LATEST_candidate_index.md](../prompts/LATEST_candidate_index.md)
-- Raw source log: [data/2026-09-03_sources.jsonl](../data/2026-09-03_sources.jsonl)
+- Raw source log: [data/2026-09-04_sources.jsonl](../data/2026-09-04_sources.jsonl)
 - Cumulative candidates: [data/candidate_prompts.jsonl](../data/candidate_prompts.jsonl)
 
 ## Run Summary
@@ -16,14 +16,14 @@ This repo is an external inbox for Seedance prompt research. It collects candida
 | Metric | Count |
 |---|---:|
 | Sources/items scanned | 125 |
-| OK | 84 |
-| Filtered out | 33 |
+| OK | 83 |
+| Filtered out | 34 |
 | Missing secret | 5 |
 | Disabled by policy | 2 |
 | Risk-flagged | 0 |
 | Other errors | 1 |
 | Candidate snippets this run | 163 |
-| Newly appended candidates | 22 |
+| Newly appended candidates | 20 |
 
 ## Best Review Targets
 
@@ -43,10 +43,10 @@ modal audio-video joint generation architecture that supports text, image, audio
 - Score: `17`
 - Trust: `discovery`
 - Source: https://github.com/akirakai/awesome-seedance-prompts
-- Candidate ID: `df1767ff0ee492c6`
+- Candidate ID: `5e0089eab056cee6`
 
 ```text
-akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-09-03T08:51:42Z https://github.co
+akirakai/awesome-seedance-prompts A curated collection of high-quality Seedance prompts, workflows, and best practices for cinematic, photorealistic, commercial, anime, action, UGC, and viral videos. Includes proven templates, camera language, multi-shot storytelling, character consistency, reusable techniques, and community examples. 2026-09-04T08:55:02Z https://github.co
 ```
 
 ### 3. HuyLe82US/awesome-seedance-prompts:prompts/03-ugc-social/10s-mv-trio-pop-guofeng-neon-bass.md
@@ -93,7 +93,18 @@ Handheld shot circling two boxers practice sparring in a gritty gym, purposefull
 et al. (71 additional authors not shown) View a PDF of the paper titled Seedance 2.0: Advancing Video Generation for World Complexity, by Team Seedance and 170 other authors View PDF Abstract: Seedance 2.0 is a new native multi-modal audio-video generation model, officially released in China in early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro, Seedance 2.0 adopts a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This allows it to support four input modalities: text, image, audio, and video, by integrating one of the most comprehensive suites of multi-modal content reference and editing capabilities available...
 ```
 
-### 7. YouMind-OpenLab/awesome-seedance-2-prompts
+### 7. papperrollinggery/Paperrolling-DIRcreative-SKILL
+
+- Score: `13`
+- Trust: `discovery`
+- Source: https://github.com/papperrollinggery/Paperrolling-DIRcreative-SKILL
+- Candidate ID: `512b0ca76f533eda`
+
+```text
+papperrollinggery/Paperrolling-DIRcreative-SKILL AI film preproduction Skill for Codex: reference-video analysis, scripts, detailed storyboards, visual assets, Seedance 2.5/2.0 prompts, and verified releases. Python ['advertising', 'agent-skills', 'ai-agents', 'ai-video', 'codex', 'codex-skills', 'creative-ai', 'creative-workflow', 'director', 'film-preproduction', 'filmmaking', 'generative-ai', 'image-generation', 'multi-agent', 'prompt-engineering', 'screenwriting', 'seedance', 'storyboarding', 'video-analysis'
+```
+
+### 8. YouMind-OpenLab/awesome-seedance-2-prompts
 
 - Score: `13`
 - Trust: `discovery`
@@ -102,17 +113,6 @@ et al. (71 additional authors not shown) View a PDF of the paper titled Seedance
 
 ```text
 YouMind-OpenLab/awesome-seedance-2-prompts 🎬 2000+ curated Seedance 2.0 video generation prompts — cinematic, anime, UGC, ads, meme styles. Includes Seedance API guides, character consistency tips, and advanced video workflows. TypeScript ['ai-video', 'awesome', 'awesome-list', 'prompt-engineering', 'seedance', 'seedance-2', 'seedance-api', 'seedance2', 'video-generation', 'video
-```
-
-### 8. HuyLe82US/awesome-seedance-prompts
-
-- Score: `13`
-- Trust: `community-collection`
-- Source: https://github.com/HuyLe82US/awesome-seedance-prompts
-- Candidate ID: `23c3bed44b395d61`
-
-```text
-HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for high-fidelity AI video generation. Curated, proven templates plus practical workflows to go from idea → production-ready outputs fast-covering cinematic film, anime, UGC, social content, memes, and advertising. ['ai', 'ai-video-generator', 'awesome', 'awesome-resources', 'cinematic-ai', 'prompt-
 ```
 
 ## Source Health
@@ -124,7 +124,7 @@ HuyLe82US/awesome-seedance-prompts Seedance 2.0 prompt vault & resource hub for 
 | `bytedance_seedance_2_official` | web | 1 | 0 | 0 | 0 | 0 | 0 |
 | `exa_web_seedance_prompt_search` | exa_search | 0 | 0 | 1 | 0 | 0 | 0 |
 | `fal_ai_seedance_api` | github_repo | 1 | 0 | 0 | 0 | 0 | 0 |
-| `github_seedance_2_video_prompt_search` | github_search | 7 | 5 | 0 | 0 | 0 | 0 |
+| `github_seedance_2_video_prompt_search` | github_search | 6 | 6 | 0 | 0 | 0 | 0 |
 | `github_seedance_prompt_search` | github_search | 0 | 12 | 0 | 0 | 0 | 0 |
 | `huggingface_seedance_hub_search` | huggingface_search | 33 | 3 | 0 | 0 | 0 | 0 |
 | `huyle_awesome_seedance_prompts` | github_repo | 33 | 0 | 0 | 0 | 0 | 0 |
